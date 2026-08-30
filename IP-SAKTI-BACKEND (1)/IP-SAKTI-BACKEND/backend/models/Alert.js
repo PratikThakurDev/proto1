@@ -1,0 +1,24 @@
+import mongoose from "mongoose";
+
+const alertSchema = new mongoose.Schema(
+  {
+    user: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+      index: true
+    },
+    title: { type: String, required: true },
+    message: { type: String, required: true },
+    type: {
+      type: String,
+      enum: ["law", "rule", "notification", "circular", "system"],
+      default: "system"
+    },
+    source: { type: String, default: "" },
+    isRead: { type: Boolean, default: false }
+  },
+  { timestamps: true }
+);
+
+export default mongoose.model("Alert", alertSchema);

@@ -1,0 +1,46 @@
+[
+  {
+    "record_id": "AYUR-IP-0087",
+    "product_name": "Standardized Enriched Curcumin & Piperine Nano-Emulsion Spray",
+    "regulatory_classification": "Phytopharmaceutical",
+    "statutory_definition": "Drugs & Cosmetics Rules, 1945 (Rule 2(eb)) - Purified, standardized fraction of medicinal plant extract with proven safety & efficacy.",
+    "formulation_origin": "Botanical extract of Curcuma longa and Piper nigrum (Novel extraction process)",
+    "ip_assessment": {
+      "patents": {
+        "patentable": true,
+        "patentability_rationale": "Overcomes Section 3(p) bar because it is not a crude traditional formulation. Overcomes Section 3(e) by demonstrating non-obvious synergistic bioavailability enhancement (>300% over individual extracts).",
+        "prior_art_risk": "High TKDL presence for crude Curcuma + Piper combination; patent must focus strictly on the specific purified fraction ratio and nano-emulsion process parameters.",
+        "relevant_sections": [
+          "Patents Act 1970 Sec 3(d)",
+          "Sec 3(e)",
+          "Sec 3(p)"
+        ]
+      },
+      "trademark": {
+        "recommended_class": "Class 5 (Pharmaceutical and Veterinary Preparations; Dietary Supplements)",
+        "gaps": "Must avoid descriptive Sanskrit names (e.g., 'Haridra Bio-Boost') under Sec 9 of Trade Marks Act 1999."
+      },
+      "geographical_indication": {
+        "applicable": true,
+        "linked_gi": "Kandhamal Haldi (GI Tagged source for high curcumin content)"
+      }
+    },
+    "abs_compliance_india": {
+      "bda_applicability": "Applicable under Biological Diversity Act, 2002 (Amended 2023) & 2024 Rules.",
+      "nba_clearance_required": true,
+      "exemption_status": "Not exempt. Commercial utilization of bio-resources by non-practitioner MSME/Startup.",
+      "required_forms": "Form I (Access to Biological Resources) to National Biodiversity Authority (NBA) prior to commercial production."
+    },
+    "international_ip_and_market_access": {
+      "wipo_gratk_treaty_2024": "Mandatory disclosure of India as the Country of Origin of Curcuma longa in PCT patent applications.",
+      "us_market_access": "USFDA Botanical Drug Development Guidance (NDA path required for therapeutic claims).",
+      "eu_market_access": "EU THMPD (Directive 2004/24/EC) or Well-Established Medicinal Use route."
+    },
+    "statutory_citations": [
+      "Drugs and Cosmetics Rules 1945, Rule 2(eb)",
+      "The Patents Act 1970, Section 3(d), 3(e), 3(p)",
+      "Biological Diversity (Amendment) Act 2023, Section 6",
+      "WIPO Treaty on Intellectual Property, Genetic Resources and Associated Traditional Knowledge (2024), Article 3"
+    ]
+  }
+]
