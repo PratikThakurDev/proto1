@@ -1,146 +1,2467 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import { askAssistant, login as apiLogin, runAnalysis } from './api.js';
-import { Link, Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
-import { ArrowLeft, ArrowRight, ArrowUpRight, BarChart3, BookOpen, BriefcaseBusiness, Check, ChevronDown, ChevronRight, ClipboardCheck, Download, FileCheck2, FileText, FlaskConical, Globe2, Grid2X2, HelpCircle, Home as HomeIcon, Leaf, LockKeyhole, MessageCircle, MoreHorizontal, Package, PanelTop, PieChart, Search, Send, ShieldCheck, Sparkles, Sprout, Store, Target, Users, X } from 'lucide-react';
-import './theme.css';
+import { createContext, useContext, useEffect, useState } from "react";
+import {
+  askAssistant,
+  login as apiLogin,
+  runAnalysis,
+  getProducts,
+  getDashboard,
+} from "./api.js";
+import {
+  Link,
+  Route,
+  Switch,
+  useLocation,
+  Router as WouterRouter,
+} from "wouter";
+import {
+  ArrowLeft,
+  ArrowRight,
+  ArrowUpRight,
+  BarChart3,
+  BookOpen,
+  BriefcaseBusiness,
+  Check,
+  ChevronDown,
+  ChevronRight,
+  ClipboardCheck,
+  Download,
+  FileCheck2,
+  FileText,
+  FlaskConical,
+  Globe2,
+  Grid2X2,
+  HelpCircle,
+  Home as HomeIcon,
+  Leaf,
+  LockKeyhole,
+  MessageCircle,
+  MoreHorizontal,
+  Package,
+  PanelTop,
+  PieChart,
+  Search,
+  Send,
+  ShieldCheck,
+  Sparkles,
+  Sprout,
+  Store,
+  Target,
+  Users,
+  X,
+} from "lucide-react";
+import "./theme.css";
 const ToastContext = createContext(() => undefined);
 const nav = [
-    ['/', 'Home', HomeIcon], ['/analyze', 'Analyze Product', FlaskConical], ['/products', 'My Products', Package],
-    ['/dashboard', 'Dashboard', Grid2X2], ['/navigator', 'IP Navigator', Target], ['/regulatory', 'Regulatory', ClipboardCheck],
-    ['/tk-abs', 'TK / ABS', Leaf], ['/markets', 'Global Markets', Globe2], ['/assistant', 'AI Assistant', Sparkles],
-    ['/evidence', 'Evidence Center', BookOpen], ['/reports', 'Reports', FileText],
+  ["/", "Home", HomeIcon],
+  ["/analyze", "Analyze Product", FlaskConical],
+  ["/products", "My Products", Package],
+  ["/dashboard", "Dashboard", Grid2X2],
+  ["/navigator", "IP Navigator", Target],
+  ["/regulatory", "Regulatory", ClipboardCheck],
+  ["/tk-abs", "TK / ABS", Leaf],
+  ["/markets", "Global Markets", Globe2],
+  ["/assistant", "AI Assistant", Sparkles],
+  ["/evidence", "Evidence Center", BookOpen],
+  ["/reports", "Reports", FileText],
 ];
 const products = [
-    { id: 'p1', name: 'Herbal Digestive Formula', category: 'Ayurvedic Medicine', stage: 'Testing', status: 'Analyzed', updated: '2 hrs ago' },
-    { id: 'p2', name: 'Triphala Capsule', category: 'Herbal Product', stage: 'Prototype', status: 'In Progress', updated: '1 day ago' },
-    { id: 'p3', name: 'Pain Relief Oil', category: 'Ayurvedic Medicine', stage: 'Manufacturing', status: 'Analyzed', updated: '2 days ago' },
-    { id: 'p4', name: 'Ashwagandha Capsules', category: 'Nutraceutical', stage: 'Research', status: 'Draft', updated: '5 days ago' },
+  {
+    id: "p1",
+    name: "Herbal Digestive Formula",
+    category: "Ayurvedic Medicine",
+    stage: "Testing",
+    status: "Analyzed",
+    updated: "2 hrs ago",
+  },
+  {
+    id: "p2",
+    name: "Triphala Capsule",
+    category: "Herbal Product",
+    stage: "Prototype",
+    status: "In Progress",
+    updated: "1 day ago",
+  },
+  {
+    id: "p3",
+    name: "Pain Relief Oil",
+    category: "Ayurvedic Medicine",
+    stage: "Manufacturing",
+    status: "Analyzed",
+    updated: "2 days ago",
+  },
+  {
+    id: "p4",
+    name: "Ashwagandha Capsules",
+    category: "Nutraceutical",
+    stage: "Research",
+    status: "Draft",
+    updated: "5 days ago",
+  },
 ];
 const reports = [
-    ['IP Readiness Report – Herbal Digestive Formula', 'IP Readiness', 'May 14, 2024', 'Completed', '87%'],
-    ['Regulatory Checklist Summary – Immunity Booster Tonic', 'Regulatory', 'May 12, 2024', 'Completed', '72%'],
-    ['TK / ABS Compliance Report – Neem Skin Gel', 'TK / ABS', 'May 10, 2024', 'Completed', '65%'],
-    ['Global Market Readiness Report – Ashwagandha Capsules', 'Global Markets', 'May 09, 2024', 'Shared', '91%'],
-    ['Full Product Analysis Report – Turmeric Curcumin Extract', 'Full Analysis', 'May 05, 2024', 'Draft', '48%'],
+  [
+    "IP Readiness Report – Herbal Digestive Formula",
+    "IP Readiness",
+    "May 14, 2024",
+    "Completed",
+    "87%",
+  ],
+  [
+    "Regulatory Checklist Summary – Immunity Booster Tonic",
+    "Regulatory",
+    "May 12, 2024",
+    "Completed",
+    "72%",
+  ],
+  [
+    "TK / ABS Compliance Report – Neem Skin Gel",
+    "TK / ABS",
+    "May 10, 2024",
+    "Completed",
+    "65%",
+  ],
+  [
+    "Global Market Readiness Report – Ashwagandha Capsules",
+    "Global Markets",
+    "May 09, 2024",
+    "Shared",
+    "91%",
+  ],
+  [
+    "Full Product Analysis Report – Turmeric Curcumin Extract",
+    "Full Analysis",
+    "May 05, 2024",
+    "Draft",
+    "48%",
+  ],
 ];
 const evidence = [
-    ['Charaka Samhita', 'Traditional Text', '95%', 'Sanskrit'], ['Ayurvedic Formulary of India', 'Government Source', '91%', 'English'],
-    ['Traditional Knowledge Digital Library (TKDL)', 'TKDL Reference', '88%', 'English'], ['Indian Patent Advanced Search System (InPASS)', 'Patent Database', '85%', 'English'],
-    ['WIPO PATENTSCOPE', 'Patent Database', '78%', 'English'], ['Biological Diversity Act, 2002 – Guidance', 'Government Source', '75%', 'English'],
-    ['US FDA Dietary Supplement Guidance', 'Regulatory Source', '72%', 'English'],
+  ["Charaka Samhita", "Traditional Text", "95%", "Sanskrit"],
+  ["Ayurvedic Formulary of India", "Government Source", "91%", "English"],
+  [
+    "Traditional Knowledge Digital Library (TKDL)",
+    "TKDL Reference",
+    "88%",
+    "English",
+  ],
+  [
+    "Indian Patent Advanced Search System (InPASS)",
+    "Patent Database",
+    "85%",
+    "English",
+  ],
+  ["WIPO PATENTSCOPE", "Patent Database", "78%", "English"],
+  [
+    "Biological Diversity Act, 2002 – Guidance",
+    "Government Source",
+    "75%",
+    "English",
+  ],
+  ["US FDA Dietary Supplement Guidance", "Regulatory Source", "72%", "English"],
 ];
-const showClass = (value) => value === 'Completed' || value === 'Analyzed' || value === 'Compliant' ? 'pill' : value === 'In Progress' || value === 'In Review' || value === 'Medium' ? 'pill amber' : value === 'Shared' ? 'pill blue' : value === 'Action Needed' ? 'pill red' : 'pill gray';
-const flagFiles = { India: '/flags/india.svg', USA: '/flags/usa.svg', UK: '/flags/uk.svg', Japan: '/flags/japan.svg' };
+const showClass = (value) =>
+  value === "Completed" || value === "Analyzed" || value === "Compliant"
+    ? "pill"
+    : value === "In Progress" || value === "In Review" || value === "Medium"
+      ? "pill amber"
+      : value === "Shared"
+        ? "pill blue"
+        : value === "Action Needed"
+          ? "pill red"
+          : "pill gray";
+const flagFiles = {
+  India: "/flags/india.svg",
+  USA: "/flags/usa.svg",
+  UK: "/flags/uk.svg",
+  Japan: "/flags/japan.svg",
+};
 function FlagImage({ country }) {
-    return <img className="flag-image" src={flagFiles[country]} alt={`${country} flag`}/>;
+  return (
+    <img
+      className="flag-image"
+      src={flagFiles[country]}
+      alt={`${country} flag`}
+    />
+  );
 }
 function ReadinessBarChart() {
-    const values = [['India', '87%'], ['USA', '72%'], ['UK', '61%'], ['Japan', '48%']];
-    return <div className="bar-chart" role="img" aria-label="Readiness scores: India 87 percent, USA 72 percent, UK 61 percent, Japan 48 percent">{values.map(([country, score]) => <div className="bar-column" key={country}><div className="bar-value">{score}</div><div className="bar-track"><i style={{ height: score }}/></div><div className="bar-label"><FlagImage country={country}/><span>{country}</span></div></div>)}</div>;
+  const values = [
+    ["India", "87%"],
+    ["USA", "72%"],
+    ["UK", "61%"],
+    ["Japan", "48%"],
+  ];
+  return (
+    <div
+      className="bar-chart"
+      role="img"
+      aria-label="Readiness scores: India 87 percent, USA 72 percent, UK 61 percent, Japan 48 percent"
+    >
+      {values.map(([country, score]) => (
+        <div className="bar-column" key={country}>
+          <div className="bar-value">{score}</div>
+          <div className="bar-track">
+            <i style={{ height: score }} />
+          </div>
+          <div className="bar-label">
+            <FlagImage country={country} />
+            <span>{country}</span>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
 function ReportStatusDonut() {
-    return <div className="donut-layout"><div className="donut-chart" role="img" aria-label="Report status: 57 percent completed, 17 percent draft, 14 percent shared, 12 percent scheduled"><span>42<small>Total</small></span></div><div className="donut-legend"><span><i className="legend-dot completed"/>Completed <b>24 (57%)</b></span><span><i className="legend-dot draft"/>Draft <b>7 (17%)</b></span><span><i className="legend-dot shared"/>Shared <b>6 (14%)</b></span><span><i className="legend-dot scheduled"/>Scheduled <b>5 (12%)</b></span></div></div>;
+  return (
+    <div className="donut-layout">
+      <div
+        className="donut-chart"
+        role="img"
+        aria-label="Report status: 57 percent completed, 17 percent draft, 14 percent shared, 12 percent scheduled"
+      >
+        <span>
+          42<small>Total</small>
+        </span>
+      </div>
+      <div className="donut-legend">
+        <span>
+          <i className="legend-dot completed" />
+          Completed <b>24 (57%)</b>
+        </span>
+        <span>
+          <i className="legend-dot draft" />
+          Draft <b>7 (17%)</b>
+        </span>
+        <span>
+          <i className="legend-dot shared" />
+          Shared <b>6 (14%)</b>
+        </span>
+        <span>
+          <i className="legend-dot scheduled" />
+          Scheduled <b>5 (12%)</b>
+        </span>
+      </div>
+    </div>
+  );
 }
 function Brand() {
-    return <Link href="/" className="brand" data-testid="link-brand"><span className="brand-mark"/><span className="brand-text">IP-SAKTI<small>Sahayak</small></span></Link>;
+  return (
+    <Link href="/" className="brand" data-testid="link-brand">
+      <span className="brand-mark" />
+      <span className="brand-text">
+        IP-SAKTI<small>Sahayak</small>
+      </span>
+    </Link>
+  );
 }
 function Header({ onToast }) {
-    const [location] = useLocation();
-    return <header className="topbar"><Brand /><nav className="nav-scroll">{nav.slice(1).map(([href, label, Icon]) => <Link key={href} href={href} className={`nav-link ${location === href ? 'active' : ''}`} data-testid={`link-nav-${label.toLowerCase().replaceAll(' ', '-')}`}><Icon className="nav-icon"/>{label}</Link>)}</nav><div className="profile"><span>English&nbsp; | &nbsp;हिन्दी</span><button className="avatar" onClick={() => onToast('Profile menu is ready')} data-testid="button-profile">AS</button></div></header>;
+  const [location] = useLocation();
+  return (
+    <header className="topbar">
+      <Brand />
+      <nav className="nav-scroll">
+        {nav.slice(1).map(([href, label, Icon]) => (
+          <Link
+            key={href}
+            href={href}
+            className={`nav-link ${location === href ? "active" : ""}`}
+            data-testid={`link-nav-${label.toLowerCase().replaceAll(" ", "-")}`}
+          >
+            <Icon className="nav-icon" />
+            {label}
+          </Link>
+        ))}
+      </nav>
+      <div className="profile">
+        <span>English&nbsp; | &nbsp;हिन्दी</span>
+        <button
+          className="avatar"
+          onClick={() => onToast("Profile menu is ready")}
+          data-testid="button-profile"
+        >
+          AS
+        </button>
+      </div>
+    </header>
+  );
 }
-function Footer() { return <footer className="footer"><span>© 2024 IP-SAKTI Sahayak &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp; Help Center</span><span>Made with <Leaf size={11}/> for a better tomorrow</span></footer>; }
+function Footer() {
+  return (
+    <footer className="footer">
+      <span>
+        © 2024 IP-SAKTI Sahayak &nbsp; Privacy Policy &nbsp; Terms of Use &nbsp;
+        Help Center
+      </span>
+      <span>
+        Made with <Leaf size={11} /> for a better tomorrow
+      </span>
+    </footer>
+  );
+}
 function Shell({ children }) {
-    const onToast = useContext(ToastContext);
-    return <div className="shell-page leaf-corner"><Header onToast={onToast}/>{children}<Footer /></div>;
+  const onToast = useContext(ToastContext);
+  return (
+    <div className="shell-page leaf-corner">
+      <Header onToast={onToast} />
+      {children}
+      <Footer />
+    </div>
+  );
 }
 function Page({ title, subtitle, action, children }) {
-    return <main className="page-body"><div className="page-heading"><div><div className="eyebrow">IP-SAKTI / SAHAYAK</div><h1 data-testid={`text-page-title-${title.toLowerCase().replaceAll(' ', '-')}`}>{title}</h1><p>{subtitle}</p></div>{action}</div>{children}</main>;
+  return (
+    <main className="page-body">
+      <div className="page-heading">
+        <div>
+          <div className="eyebrow">IP-SAKTI / SAHAYAK</div>
+          <h1
+            data-testid={`text-page-title-${title.toLowerCase().replaceAll(" ", "-")}`}
+          >
+            {title}
+          </h1>
+          <p>{subtitle}</p>
+        </div>
+        {action}
+      </div>
+      {children}
+    </main>
+  );
 }
 function Stat({ label, value, note, Icon }) {
-    return <div className="card metric" data-testid={`metric-${label.toLowerCase().replaceAll(' ', '-')}`}><div className="metric-label"><span>{label}</span><Icon className="metric-icon"/></div><div className="metric-value">{value}</div><div className="metric-note">{note}</div></div>;
+  return (
+    <div
+      className="card metric"
+      data-testid={`metric-${label.toLowerCase().replaceAll(" ", "-")}`}
+    >
+      <div className="metric-label">
+        <span>{label}</span>
+        <Icon className="metric-icon" />
+      </div>
+      <div className="metric-value">{value}</div>
+      <div className="metric-note">{note}</div>
+    </div>
+  );
 }
 function Home() {
-    return <div className="hero leaf-corner"><header className="hero-nav"><Brand /><nav className="nav-scroll">{nav.slice(1).map(([href, label]) => <Link href={href} className="nav-link" key={href} data-testid={`link-home-${label.toLowerCase().replaceAll(' ', '-')}`}>{label}</Link>)}</nav><span style={{ fontSize: 11 }}>English&nbsp; | &nbsp;हिन्दी</span><button className="avatar" data-testid="button-home-profile">AS</button></header><section className="hero-copy"><div><span className="pill"><Sprout size={12}/> AI-powered IP & regulatory navigator for Ayurveda</span><h1>Your AI Guide for<br /><span>Ayurvedic IP &</span><br />Regulatory Compliance</h1><p>Get personalized guidance on intellectual property, regulations, traditional knowledge, and international market considerations for your Ayurvedic products — with evidence from authoritative sources.</p><div className="hero-actions"><Link href="/analyze" className="btn btn-primary" data-testid="link-analyze-product"><FlaskConical size={14}/> Analyze My Product <ArrowRight size={14}/></Link><button className="btn btn-secondary" onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })} data-testid="button-learn-how"><BookOpen size={14}/> Learn How It Works</button></div><div className="proof-row"><span><ShieldCheck size={13}/> Evidence-Based</span><span><FileCheck2 size={13}/> Source-Cited</span><span><LockKeyhole size={13}/> Secure & Reliable</span></div></div><div className="hero-art"><img className="hero-botanical-photo" src="/hero-botanical-reference.jpg" alt="Ayurvedic herbs, mortar and pestle, oils, and botanical ingredients" data-testid="img-botanical-hero"/></div></section><section className="help-grid" id="how-it-works"><div className="rule-title">What IP-SAKTI Helps With</div><div className="feature-grid">{[['Product Classification', FlaskConical, 'AI-assisted classification of your Ayurvedic product type'], ['IP Assessment', ShieldCheck, 'Patent, Trademark, GI, Copyright & Trade Secret guidance'], ['Regulatory Guidance', ClipboardCheck, 'Understand applicable regulations, licensing, labelling & more'], ['Traditional Knowledge & ABS Check', Leaf, 'TK relevance, ABS considerations & official resources'], ['International Guidance', Globe2, 'India & global market IP and regulatory insights'], ['Source-Cited AI Answers', FileText, 'Answers backed by authoritative sources with citations']].map(([title, Icon, copy], i) => <div className="feature" key={String(title)} data-testid={`card-home-feature-${i}`}><Icon /><b>{title}</b><p>{copy}</p></div>)}</div><div className="home-bottom"><div className="card home-panel"><h3>Why IP-SAKTI?</h3><div className="bullets"><div className="bullet"><i /> Fragmented data, IP portals and time-consuming research</div><div className="bullet"><i /> One intelligent platform for personalized guidance</div><div className="bullet"><i /> Evidence-based insights and an actionable roadmap</div><div className="bullet"><i /> Designed for researchers, manufacturers and institutions</div></div></div><div className="card home-panel"><h3>Why type on IP-SAKTI?</h3><div className="persona-row">{[['Startups', BriefcaseBusiness], ['Researchers', FlaskConical], ['Manufacturers', Store], ['Entrepreneurs', Users], ['Institutions', PanelTop]].map(([name, Icon]) => <div className="persona" key={String(name)}><Icon size={19}/><span>{name}</span></div>)}</div></div></div><div className="home-footer"><ShieldCheck size={14}/> One Personalized Report. One Actionable Roadmap. Total Confidence.</div></section></div>;
+  return (
+    <div className="hero leaf-corner">
+      <header className="hero-nav">
+        <Brand />
+        <nav className="nav-scroll">
+          {nav.slice(1).map(([href, label]) => (
+            <Link
+              href={href}
+              className="nav-link"
+              key={href}
+              data-testid={`link-home-${label.toLowerCase().replaceAll(" ", "-")}`}
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
+        <span style={{ fontSize: 11 }}>English&nbsp; | &nbsp;हिन्दी</span>
+        <button className="avatar" data-testid="button-home-profile">
+          AS
+        </button>
+      </header>
+      <section className="hero-copy">
+        <div>
+          <span className="pill">
+            <Sprout size={12} /> AI-powered IP & regulatory navigator for
+            Ayurveda
+          </span>
+          <h1>
+            Your AI Guide for
+            <br />
+            <span>Ayurvedic IP &</span>
+            <br />
+            Regulatory Compliance
+          </h1>
+          <p>
+            Get personalized guidance on intellectual property, regulations,
+            traditional knowledge, and international market considerations for
+            your Ayurvedic products — with evidence from authoritative sources.
+          </p>
+          <div className="hero-actions">
+            <Link
+              href="/analyze"
+              className="btn btn-primary"
+              data-testid="link-analyze-product"
+            >
+              <FlaskConical size={14} /> Analyze My Product{" "}
+              <ArrowRight size={14} />
+            </Link>
+            <button
+              className="btn btn-secondary"
+              onClick={() =>
+                document
+                  .getElementById("how-it-works")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              data-testid="button-learn-how"
+            >
+              <BookOpen size={14} /> Learn How It Works
+            </button>
+          </div>
+          <div className="proof-row">
+            <span>
+              <ShieldCheck size={13} /> Evidence-Based
+            </span>
+            <span>
+              <FileCheck2 size={13} /> Source-Cited
+            </span>
+            <span>
+              <LockKeyhole size={13} /> Secure & Reliable
+            </span>
+          </div>
+        </div>
+        <div className="hero-art">
+          <img
+            className="hero-botanical-photo"
+            src="/hero-botanical-reference.jpg"
+            alt="Ayurvedic herbs, mortar and pestle, oils, and botanical ingredients"
+            data-testid="img-botanical-hero"
+          />
+        </div>
+      </section>
+      <section className="help-grid" id="how-it-works">
+        <div className="rule-title">What IP-SAKTI Helps With</div>
+        <div className="feature-grid">
+          {[
+            [
+              "Product Classification",
+              FlaskConical,
+              "AI-assisted classification of your Ayurvedic product type",
+            ],
+            [
+              "IP Assessment",
+              ShieldCheck,
+              "Patent, Trademark, GI, Copyright & Trade Secret guidance",
+            ],
+            [
+              "Regulatory Guidance",
+              ClipboardCheck,
+              "Understand applicable regulations, licensing, labelling & more",
+            ],
+            [
+              "Traditional Knowledge & ABS Check",
+              Leaf,
+              "TK relevance, ABS considerations & official resources",
+            ],
+            [
+              "International Guidance",
+              Globe2,
+              "India & global market IP and regulatory insights",
+            ],
+            [
+              "Source-Cited AI Answers",
+              FileText,
+              "Answers backed by authoritative sources with citations",
+            ],
+          ].map(([title, Icon, copy], i) => (
+            <div
+              className="feature"
+              key={String(title)}
+              data-testid={`card-home-feature-${i}`}
+            >
+              <Icon />
+              <b>{title}</b>
+              <p>{copy}</p>
+            </div>
+          ))}
+        </div>
+        <div className="home-bottom">
+          <div className="card home-panel">
+            <h3>Why IP-SAKTI?</h3>
+            <div className="bullets">
+              <div className="bullet">
+                <i /> Fragmented data, IP portals and time-consuming research
+              </div>
+              <div className="bullet">
+                <i /> One intelligent platform for personalized guidance
+              </div>
+              <div className="bullet">
+                <i /> Evidence-based insights and an actionable roadmap
+              </div>
+              <div className="bullet">
+                <i /> Designed for researchers, manufacturers and institutions
+              </div>
+            </div>
+          </div>
+          <div className="card home-panel">
+            <h3>Why type on IP-SAKTI?</h3>
+            <div className="persona-row">
+              {[
+                ["Startups", BriefcaseBusiness],
+                ["Researchers", FlaskConical],
+                ["Manufacturers", Store],
+                ["Entrepreneurs", Users],
+                ["Institutions", PanelTop],
+              ].map(([name, Icon]) => (
+                <div className="persona" key={String(name)}>
+                  <Icon size={19} />
+                  <span>{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="home-footer">
+          <ShieldCheck size={14} /> One Personalized Report. One Actionable
+          Roadmap. Total Confidence.
+        </div>
+      </section>
+    </div>
+  );
 }
 function Dashboard({ onToast }) {
-    return <Page title="Welcome back, Ananya" subtitle="Keep your Ayurvedic innovation work moving with evidence-led guidance." action={<div className="searchbox" style={{ display: 'flex', alignItems: 'center', gap: 7 }}><Search size={14}/><input placeholder="Search anything..." style={{ border: 0, outline: 0, background: 'transparent', width: 160, fontSize: 11 }} data-testid="input-dashboard-search"/></div>}><div className="metric-grid"><Stat label="My Products" value="03" note="View all →" Icon={Package}/><Stat label="IP Opportunities" value="24" note="Explore →" Icon={Target}/><Stat label="Regulatory Updates" value="12" note="View updates →" Icon={ClipboardCheck}/><Stat label="Watchlist Alerts" value="05" note="View alerts →" Icon={ShieldCheck}/></div><div className="dashboard-grid"><div className="card card-pad"><h2 className="section-title">Recent Activity <span>View all →</span></h2>{products.slice(0, 3).map((p, i) => <div className="activity-row" key={p.id} data-testid={`row-activity-${p.id}`}><span className="dot-icon"><Leaf size={14}/></span><div className="row-main"><b>{p.name}</b><small>{i === 0 ? 'Analysis report generated' : 'Added to watchlist'}</small></div><span className="row-end">{p.updated}</span></div>)}</div><div className="card card-pad"><h2 className="section-title">Quick Access</h2><div className="quick-list"><Link href="/analyze" className="quick" data-testid="link-quick-analyze"><span><FlaskConical size={14}/> &nbsp;Analyze New Product</span><ArrowRight size={14}/></Link><Link href="/navigator" className="quick" data-testid="link-quick-patents"><span><Search size={14}/> &nbsp;Search IP Database</span><ArrowRight size={14}/></Link><Link href="/regulatory" className="quick" data-testid="link-quick-regulatory"><span><ClipboardCheck size={14}/> &nbsp;Regulatory Guidance</span><ArrowRight size={14}/></Link></div></div></div><div className="card table-card"><div className="card-pad"><h2 className="section-title">My Products <span>View all →</span></h2></div><ProductTable onToast={onToast} compact/></div><div className="card card-pad" style={{ marginTop: 18, background: '#f0f6eb' }}><div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}><div><h2 className="section-title" style={{ marginBottom: 5 }}>Need help?</h2><div style={{ fontSize: 11, color: '#6a786c' }}>Ask our AI Assistant for any IP or regulatory question.</div></div><Link href="/assistant" className="btn btn-primary" data-testid="link-dashboard-assistant">Ask Assistant <ArrowRight size={13}/></Link></div></div></Page>;
+  const [dashboard, setDashboard] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getDashboard()
+      .then((data) => {
+        setDashboard(data.data || data);
+      })
+      .catch((e) => {
+        onToast(e.message || "Failed to load dashboard");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <Page
+        title="Welcome back, Ananya"
+        subtitle="Keep your Ayurvedic innovation work moving with evidence-led guidance."
+      >
+        <div className="card card-pad">Loading dashboard...</div>
+      </Page>
+    );
+  }
+
+  return (
+    <Page
+      title="Welcome back, Ananya"
+      subtitle="Keep your Ayurvedic innovation work moving with evidence-led guidance."
+      action={
+        <div
+          className="searchbox"
+          style={{ display: "flex", alignItems: "center", gap: 7 }}
+        >
+          <Search size={14} />
+          <input
+            placeholder="Search anything..."
+            style={{
+              border: 0,
+              outline: 0,
+              background: "transparent",
+              width: 160,
+              fontSize: 11,
+            }}
+            data-testid="input-dashboard-search"
+          />
+        </div>
+      }
+    >
+      <div className="metric-grid">
+        <Stat
+          label="My Products"
+          value={String(dashboard?.metrics?.products ?? 0).padStart(2, "0")}
+          note="View all →"
+          Icon={Package}
+        />
+
+        <Stat
+          label="IP Opportunities"
+          value={String(dashboard?.metrics?.ipOpportunities ?? 0).padStart(
+            2,
+            "0",
+          )}
+          note="Explore →"
+          Icon={Target}
+        />
+
+        <Stat
+          label="Regulatory Updates"
+          value={String(dashboard?.metrics?.regulatoryUpdates ?? 0).padStart(
+            2,
+            "0",
+          )}
+          note="View updates →"
+          Icon={ClipboardCheck}
+        />
+
+        <Stat
+          label="Watchlist Alerts"
+          value={String(dashboard?.metrics?.watchlistAlerts ?? 0).padStart(
+            2,
+            "0",
+          )}
+          note="View alerts →"
+          Icon={ShieldCheck}
+        />
+      </div>
+
+      <div className="dashboard-grid">
+        <div className="card card-pad">
+          <h2 className="section-title">
+            Recent Activity <span>View all →</span>
+          </h2>
+
+          {(dashboard?.products || []).slice(0, 3).map((item, i) => (
+            <div className="activity-row" key={item._id || item.id || i}>
+              <span className="dot-icon">
+                <Leaf size={14} />
+              </span>
+
+              <div className="row-main">
+                <b>{item.name}</b>
+                <small>{item.status || "Product added"}</small>
+              </div>
+
+              <span className="row-end">{item.updated || ""}</span>
+            </div>
+          ))}
+
+          {(!dashboard?.products ||
+            dashboard.products.length === 0) && (
+            <div style={{ fontSize: 11, color: "#6a786c" }}>
+              No recent activity.
+            </div>
+          )}
+        </div>
+
+        <div className="card card-pad">
+          <h2 className="section-title">Quick Access</h2>
+
+          <div className="quick-list">
+            <Link
+              href="/analyze"
+              className="quick"
+              data-testid="link-quick-analyze"
+            >
+              <span>
+                <FlaskConical size={14} /> &nbsp;Analyze New Product
+              </span>
+              <ArrowRight size={14} />
+            </Link>
+
+            <Link
+              href="/navigator"
+              className="quick"
+              data-testid="link-quick-patents"
+            >
+              <span>
+                <Search size={14} /> &nbsp;Search IP Database
+              </span>
+              <ArrowRight size={14} />
+            </Link>
+
+            <Link
+              href="/regulatory"
+              className="quick"
+              data-testid="link-quick-regulatory"
+            >
+              <span>
+                <ClipboardCheck size={14} /> &nbsp;Regulatory Guidance
+              </span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="card card-pad"
+        style={{ marginTop: 18, background: "#f0f6eb" }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            gap: 12,
+          }}
+        >
+          <div>
+            <h2 className="section-title" style={{ marginBottom: 5 }}>
+              Need help?
+            </h2>
+
+            <div style={{ fontSize: 11, color: "#6a786c" }}>
+              Ask our AI Assistant for any IP or regulatory question.
+            </div>
+          </div>
+
+          <Link
+            href="/assistant"
+            className="btn btn-primary"
+            data-testid="link-dashboard-assistant"
+          >
+            Ask Assistant <ArrowRight size={13} />
+          </Link>
+        </div>
+      </div>
+    </Page>
+  );
 }
+
 function ProductTable({ onToast, compact = false }) {
-    const [filter, setFilter] = useState('All');
-    const [search, setSearch] = useState('');
-    const rows = products.filter(p => (filter === 'All' || p.status === filter) && p.name.toLowerCase().includes(search.toLowerCase()));
-    return <><div className="table-toolbar"><input className="searchbox" value={search} onChange={e => setSearch(e.target.value)} placeholder="Search products..." data-testid="input-product-search"/><select className="selectbox" value={filter} onChange={e => setFilter(e.target.value)} data-testid="select-product-status"><option>All</option><option>Analyzed</option><option>In Progress</option><option>Draft</option></select>{!compact && <Link href="/analyze" className="btn btn-primary" data-testid="link-add-product"><FlaskConical size={13}/> Add New Product</Link>}</div><div className="table-wrap"><table><thead><tr><th>Product Name</th><th>Category</th><th>Development Stage</th><th>Status</th><th>Updated</th><th>Actions</th></tr></thead><tbody>{rows.map(p => <tr key={p.id} data-testid={`row-product-${p.id}`}><td><strong>{p.name}</strong></td><td>{p.category}</td><td>{p.stage}</td><td><span className={showClass(p.status)}>{p.status}</span></td><td>{p.updated}</td><td><button className="btn btn-quiet" onClick={() => onToast(`${p.name} selected`)} data-testid={`button-product-open-${p.id}`}><ArrowUpRight size={14}/></button></td></tr>)}</tbody></table>{!rows.length && <div className="empty">No products match this filter.</div>}</div></>;
+  const [filter, setFilter] = useState("All");
+  const [search, setSearch] = useState("");
+  const rows = products.filter(
+    (p) =>
+      (filter === "All" || p.status === filter) &&
+      p.name.toLowerCase().includes(search.toLowerCase()),
+  );
+  return (
+    <>
+      <div className="table-toolbar">
+        <input
+          className="searchbox"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search products..."
+          data-testid="input-product-search"
+        />
+        <select
+          className="selectbox"
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          data-testid="select-product-status"
+        >
+          <option>All</option>
+          <option>Analyzed</option>
+          <option>In Progress</option>
+          <option>Draft</option>
+        </select>
+        {!compact && (
+          <Link
+            href="/analyze"
+            className="btn btn-primary"
+            data-testid="link-add-product"
+          >
+            <FlaskConical size={13} /> Add New Product
+          </Link>
+        )}
+      </div>
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Category</th>
+              <th>Development Stage</th>
+              <th>Status</th>
+              <th>Updated</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((p) => (
+              <tr key={p.id} data-testid={`row-product-${p.id}`}>
+                <td>
+                  <strong>{p.name}</strong>
+                </td>
+                <td>{p.category}</td>
+                <td>{p.stage}</td>
+                <td>
+                  <span className={showClass(p.status)}>{p.status}</span>
+                </td>
+                <td>{p.updated}</td>
+                <td>
+                  <button
+                    className="btn btn-quiet"
+                    onClick={() => onToast(`${p.name} selected`)}
+                    data-testid={`button-product-open-${p.id}`}
+                  >
+                    <ArrowUpRight size={14} />
+                  </button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        {!rows.length && (
+          <div className="empty">No products match this filter.</div>
+        )}
+      </div>
+    </>
+  );
 }
-function Products({ onToast }) { return <Page title="My Products" subtitle="Manage and track your Ayurvedic products and their IP journey." action={<Link href="/analyze" className="btn btn-primary" data-testid="link-products-add"><FlaskConical size={14}/> Add New Product</Link>}><div className="metric-grid"><Stat label="Total Products" value="03" note="Across all stages" Icon={Package}/><Stat label="Analyzed" value="02" note="Ready for action" Icon={Check}/><Stat label="In Progress" value="01" note="Continue analysis" Icon={FlaskConical}/><Stat label="Watchlisted" value="02" note="Latest alerts" Icon={ShieldCheck}/></div><div className="card table-card"><ProductTable onToast={onToast}/></div></Page>; }
-const steps = ['Product Information', 'Traditional Knowledge', 'Biological Resources', 'IP Information', 'Target Market', 'Review & Analyze'];
+function Products({ onToast }) {
+  return (
+    <Page
+      title="My Products"
+      subtitle="Manage and track your Ayurvedic products and their IP journey."
+      action={
+        <Link
+          href="/analyze"
+          className="btn btn-primary"
+          data-testid="link-products-add"
+        >
+          <FlaskConical size={14} /> Add New Product
+        </Link>
+      }
+    >
+      <div className="metric-grid">
+        <Stat
+          label="Total Products"
+          value="03"
+          note="Across all stages"
+          Icon={Package}
+        />
+        <Stat
+          label="Analyzed"
+          value="02"
+          note="Ready for action"
+          Icon={Check}
+        />
+        <Stat
+          label="In Progress"
+          value="01"
+          note="Continue analysis"
+          Icon={FlaskConical}
+        />
+        <Stat
+          label="Watchlisted"
+          value="02"
+          note="Latest alerts"
+          Icon={ShieldCheck}
+        />
+      </div>
+      <div className="card table-card">
+        <ProductTable onToast={onToast} />
+      </div>
+    </Page>
+  );
+}
+const steps = [
+  "Product Information",
+  "Traditional Knowledge",
+  "Biological Resources",
+  "IP Information",
+  "Target Market",
+  "Review & Analyze",
+];
 function Wizard({ onToast }) {
-    const [step, setStep] = useState(1);
-    const [name, setName] = useState('Herbal Digestive Formula');
-    const [description, setDescription] = useState('An Ayurvedic formulation for digestive wellness, combining traditional herbs to support gut health.');
-    const [intendedUse, setIntendedUse] = useState('Digestive wellness and gut health support');
-    const [ingredients, setIngredients] = useState('Triphala, ginger, cumin, fennel');
-    const [formulation, setFormulation] = useState('Capsule');
-    const [selectedMarkets, setSelectedMarkets] = useState(['India', 'USA']);
-    const [stage, setStage] = useState('Testing');
-    const [saved, setSaved] = useState(false);
-    const [result, setResult] = useState(null);
-    const next = async () => {
-        if (step < 6) { setStep(step + 1); setSaved(false); return; }
-        try {
-            const data = await runAnalysis({ input: { name, description, intendedUse, ingredients: ingredients.split(',').map(x => x.trim()).filter(Boolean), formulation, stage, markets: selectedMarkets } });
-            setResult(data.data || data); setSaved(true); onToast('Analysis completed using the prototype RAG knowledge base.');
-        } catch (e) { onToast(e.message || 'Analysis failed. Start the backend and RAG service.'); }
-    };
-    return <main className="page-body"><div className="wizard-layout"><aside className="wizard-aside"><h3>Analyze Your Product</h3><p>Provide details about your Ayurvedic product. Our AI will analyze and guide you on IP, regulatory, TK & ABS considerations.</p><div className="step-list"><b style={{ fontSize: 11, color: '#3b6541' }}>Your Progress</b>{steps.map((s, i) => <div key={s} className={`step-item ${step === i + 1 ? 'active' : ''} ${i + 1 < step ? 'done' : ''}`}><span className="step-ball">{i + 1 < step ? <Check size={10}/> : i + 1}</span>{s}</div>)}</div><div className="card card-pad" style={{ marginTop: 15, background: '#f8faf3' }}><b style={{ fontSize: 11, color: '#355b3b' }}>Prototype RAG</b><p style={{ margin: '8px 0', fontSize: 10 }}>This demo searches 500 sample records across TKDL, India Code, IP India and NBA/ABS.</p></div></aside><section className="wizard-main"><div className="stepper">{steps.map((s, i) => <span key={s} style={{ display: 'contents' }}><div className={`stepper-node ${i + 1 <= step ? 'active' : ''}`}><b>{i + 1 < step ? <Check size={13}/> : i + 1}</b><span>{s}</span></div>{i < 5 && <i className="stepper-line"/>}</span>)}</div><WizardPanel step={step} name={name} setName={setName} description={description} setDescription={setDescription} intendedUse={intendedUse} setIntendedUse={setIntendedUse} ingredients={ingredients} setIngredients={setIngredients} formulation={formulation} setFormulation={setFormulation} stage={stage} setStage={setStage} markets={selectedMarkets} setMarkets={setSelectedMarkets}/><div className="form-actions"><button className="btn btn-secondary" disabled={step === 1} onClick={() => setStep(Math.max(1, step - 1))} data-testid="button-wizard-back"><ArrowLeft size={14}/> Back</button><button className="btn btn-primary" onClick={next} data-testid="button-wizard-next">{step === 6 ? 'Analyze My Product' : 'Save & Continue'} <ArrowRight size={14}/></button></div>{saved && result && <div className="card card-pad" style={{ marginTop: 13, background: '#eef6ea', color: '#35643d', fontSize: 12 }} data-testid="status-analysis-started"><Check size={14}/> {result.classification?.category || 'Analysis complete'} · {Math.round((result.classification?.confidence || 0) * 100)}% confidence. Evidence: {result.evidence?.length || 0} records.</div>}</section></div></main>;
+  const [step, setStep] = useState(1);
+  const [name, setName] = useState("Herbal Digestive Formula");
+  const [description, setDescription] = useState(
+    "An Ayurvedic formulation for digestive wellness, combining traditional herbs to support gut health.",
+  );
+  const [intendedUse, setIntendedUse] = useState(
+    "Digestive wellness and gut health support",
+  );
+  const [ingredients, setIngredients] = useState(
+    "Triphala, ginger, cumin, fennel",
+  );
+  const [formulation, setFormulation] = useState("Capsule");
+  const [selectedMarkets, setSelectedMarkets] = useState(["India", "USA"]);
+  const [stage, setStage] = useState("Testing");
+  const [saved, setSaved] = useState(false);
+  const [result, setResult] = useState(null);
+  const next = async () => {
+    if (step < 6) {
+      setStep(step + 1);
+      setSaved(false);
+      return;
+    }
+    try {
+      const data = await runAnalysis({
+        input: {
+          name,
+          description,
+          intendedUse,
+          ingredients: ingredients
+            .split(",")
+            .map((x) => x.trim())
+            .filter(Boolean),
+          formulation,
+          stage,
+          markets: selectedMarkets,
+        },
+      });
+      setResult(data.data || data);
+      setSaved(true);
+      onToast("Analysis completed using the prototype RAG knowledge base.");
+    } catch (e) {
+      onToast(
+        e.message || "Analysis failed. Start the backend and RAG service.",
+      );
+    }
+  };
+  return (
+    <main className="page-body">
+      <div className="wizard-layout">
+        <aside className="wizard-aside">
+          <h3>Analyze Your Product</h3>
+          <p>
+            Provide details about your Ayurvedic product. Our AI will analyze
+            and guide you on IP, regulatory, TK & ABS considerations.
+          </p>
+          <div className="step-list">
+            <b style={{ fontSize: 11, color: "#3b6541" }}>Your Progress</b>
+            {steps.map((s, i) => (
+              <div
+                key={s}
+                className={`step-item ${step === i + 1 ? "active" : ""} ${i + 1 < step ? "done" : ""}`}
+              >
+                <span className="step-ball">
+                  {i + 1 < step ? <Check size={10} /> : i + 1}
+                </span>
+                {s}
+              </div>
+            ))}
+          </div>
+          <div
+            className="card card-pad"
+            style={{ marginTop: 15, background: "#f8faf3" }}
+          >
+            <b style={{ fontSize: 11, color: "#355b3b" }}>Prototype RAG</b>
+            <p style={{ margin: "8px 0", fontSize: 10 }}>
+              This demo searches 500 sample records across TKDL, India Code, IP
+              India and NBA/ABS.
+            </p>
+          </div>
+        </aside>
+        <section className="wizard-main">
+          <div className="stepper">
+            {steps.map((s, i) => (
+              <span key={s} style={{ display: "contents" }}>
+                <div
+                  className={`stepper-node ${i + 1 <= step ? "active" : ""}`}
+                >
+                  <b>{i + 1 < step ? <Check size={13} /> : i + 1}</b>
+                  <span>{s}</span>
+                </div>
+                {i < 5 && <i className="stepper-line" />}
+              </span>
+            ))}
+          </div>
+          <WizardPanel
+            step={step}
+            name={name}
+            setName={setName}
+            description={description}
+            setDescription={setDescription}
+            intendedUse={intendedUse}
+            setIntendedUse={setIntendedUse}
+            ingredients={ingredients}
+            setIngredients={setIngredients}
+            formulation={formulation}
+            setFormulation={setFormulation}
+            stage={stage}
+            setStage={setStage}
+            markets={selectedMarkets}
+            setMarkets={setSelectedMarkets}
+          />
+          <div className="form-actions">
+            <button
+              className="btn btn-secondary"
+              disabled={step === 1}
+              onClick={() => setStep(Math.max(1, step - 1))}
+              data-testid="button-wizard-back"
+            >
+              <ArrowLeft size={14} /> Back
+            </button>
+            <button
+              className="btn btn-primary"
+              onClick={next}
+              data-testid="button-wizard-next"
+            >
+              {step === 6 ? "Analyze My Product" : "Save & Continue"}{" "}
+              <ArrowRight size={14} />
+            </button>
+          </div>
+          {saved && result && (
+            <div
+              className="card card-pad"
+              style={{
+                marginTop: 13,
+                background: "#eef6ea",
+                color: "#35643d",
+                fontSize: 12,
+              }}
+              data-testid="status-analysis-started"
+            >
+              <Check size={14} />{" "}
+              {result.classification?.category || "Analysis complete"} ·{" "}
+              {Math.round((result.classification?.confidence || 0) * 100)}%
+              confidence. Evidence: {result.evidence?.length || 0} records.
+            </div>
+          )}
+        </section>
+      </div>
+    </main>
+  );
 }
-function WizardPanel({ step, name, setName, description, setDescription, intendedUse, setIntendedUse, ingredients, setIngredients, formulation, setFormulation, stage, setStage, markets, setMarkets }) {
-    if (step === 6)
-        return <div className="card form-card"><h2>Step 6 of 6: Review & Analyze</h2><div className="notice"><ShieldCheck size={14}/> Review your summary below and run the AI analysis. Our model will evaluate your product across IP, regulatory, TK, ABS and market dimensions.</div><div className="analysis-summary">{[['Product', name], ['Category', 'Ayurvedic Medicine'], ['Traditional Knowledge', 'Potentially Relevant'], ['Biological Resources', 'Yes'], ['Markets', markets.join(' + ')]].map(([a, b]) => <div className="summary-box" key={a}><span>{a}</span><b>{b}</b></div>)}</div><div className="card card-pad confidence"><div><div style={{ fontSize: 11, fontWeight: 700, color: '#356440' }}>Confidence Level</div><div className="confidence-score">86%</div><div className="progress-line"><i style={{ width: '86%' }}/></div></div><div className="notice" style={{ margin: 0 }}><Check size={14}/> Good completeness of input for preliminary analysis.<br /><br />Your personalized report will cover relevant IP areas, regulatory considerations, evidence sources, and a commercialization roadmap.</div></div></div>;
-    if (step === 1)
-        return <div className="card form-card"><h2>Step 1 of 6: Product Information</h2><div className="notice"><HelpCircle size={14}/> Tell us about your product so we can understand its nature, use, and possible IP and regulatory pathways.</div><div className="form-grid"><div className="field"><label>Product Name *</label><input value={name} onChange={e => setName(e.target.value)} placeholder="Enter product name" data-testid="input-analysis-product-name"/></div><div className="field"><label>Product Description *</label><textarea value={description} onChange={e => setDescription(e.target.value)} data-testid="textarea-analysis-description"/></div><div className="field"><label>Intended Use *</label><textarea value={intendedUse} onChange={e => setIntendedUse(e.target.value)} placeholder="What is the intended use of this product?" data-testid="textarea-analysis-use"/></div><div className="field"><label>Key Ingredients *</label><textarea value={ingredients} onChange={e => setIngredients(e.target.value)} data-testid="textarea-analysis-ingredients"/></div><div className="field"><label>Formulation Type *</label><select value={formulation} onChange={e => setFormulation(e.target.value)} data-testid="select-analysis-formulation"><option>Capsule</option><option>Tablet</option><option>Powder</option><option>Oil</option><option>Syrup</option></select></div><div className="field full"><label>Development Stage *</label><div className="option-grid">{['Research', 'Prototype', 'Testing', 'Manufacturing', 'Already Selling'].map(x => <button type="button" className={`option ${x === stage ? 'selected' : ''}`} onClick={() => setStage(x)} key={x} data-testid={`button-stage-${x.toLowerCase()}`}>{x}</button>)}</div></div></div></div>;
-    if (step === 5)
-        return <div className="card form-card"><h2>Step 5 of 6: Target Market</h2><div className="notice"><Globe2 size={14}/> Where do you plan to operate or sell this product?</div><label style={{ fontSize: 11, fontWeight: 700, color: '#35553b' }}>Select Target Markets *</label><div className="option-grid" style={{ gridTemplateColumns: 'repeat(5,1fr)', marginTop: 12 }}>{['India', 'USA', 'UK', 'Japan', 'Other'].map(x => <button type="button" className={`option ${markets.includes(x) ? 'selected' : ''}`} onClick={() => setMarkets(markets.includes(x) ? markets.filter(m => m !== x) : [...markets, x])} key={x} data-testid={`button-market-${x.toLowerCase()}`}>{x === 'Other' ? <span className="other-flag">+</span> : <FlagImage country={x}/>}<br />{x}</button>)}</div><div className="notice" style={{ marginTop: 20 }}><Globe2 size={15}/> <b>Market Guidance</b><br />Each country has unique IP laws and regulatory pathways. Consider filing IP protection in key markets to secure your innovation globally.</div></div>;
-    const labels = step === 2 ? ['Does your product use or derive from traditional Ayurvedic knowledge?', 'Is it based on a classical Ayurvedic formulation?', 'Is traditional / community knowledge involved?', 'Is it based on Ayurvedic literature?', 'Has the formulation been modified or newly developed?', 'Reference / source of traditional knowledge, if known'] : step === 3 ? ['Does your product use biological resources?', 'Biological resource type', 'Source of biological material', 'Intended commercial use', 'Is traditional knowledge associated with the resource?'] : ['Do you have a brand name?', 'Do you have a logo?', 'Does the product contain a new formulation?', 'Is there a new manufacturing process?', 'Do you have confidential know-how?', 'Does the product have a geographic connection?'];
-    return <div className="card form-card"><h2>Step {step} of 6: {steps[step - 1]}</h2><div className="notice"><HelpCircle size={14}/> These questions help identify relevant considerations for your personalized roadmap.</div><div className="form-grid">{labels.map((label, i) => <div className={`field ${i === labels.length - 1 && step === 2 ? 'full' : ''}`} key={label}><label>{label} *</label>{((step === 2 && i === 5) || (step === 3 && i === 3)) ? <input placeholder="Describe the source, use, or relevant details..." data-testid={`input-step-${step}-${i}`}/> : <div className="radio-group">{['Yes', 'No', 'Not Sure'].map((x, j) => <label className="radio-option" key={x}><input type="radio" name={`q${step}-${i}`} defaultChecked={j === 2} data-testid={`radio-step-${step}-${i}-${x.toLowerCase().replace(' ', '-')}`}/> {x}</label>)}</div>}</div>)}</div></div>;
+function WizardPanel({
+  step,
+  name,
+  setName,
+  description,
+  setDescription,
+  intendedUse,
+  setIntendedUse,
+  ingredients,
+  setIngredients,
+  formulation,
+  setFormulation,
+  stage,
+  setStage,
+  markets,
+  setMarkets,
+}) {
+  if (step === 6)
+    return (
+      <div className="card form-card">
+        <h2>Step 6 of 6: Review & Analyze</h2>
+        <div className="notice">
+          <ShieldCheck size={14} /> Review your summary below and run the AI
+          analysis. Our model will evaluate your product across IP, regulatory,
+          TK, ABS and market dimensions.
+        </div>
+        <div className="analysis-summary">
+          {[
+            ["Product", name],
+            ["Category", "Ayurvedic Medicine"],
+            ["Traditional Knowledge", "Potentially Relevant"],
+            ["Biological Resources", "Yes"],
+            ["Markets", markets.join(" + ")],
+          ].map(([a, b]) => (
+            <div className="summary-box" key={a}>
+              <span>{a}</span>
+              <b>{b}</b>
+            </div>
+          ))}
+        </div>
+        <div className="card card-pad confidence">
+          <div>
+            <div style={{ fontSize: 11, fontWeight: 700, color: "#356440" }}>
+              Confidence Level
+            </div>
+            <div className="confidence-score">86%</div>
+            <div className="progress-line">
+              <i style={{ width: "86%" }} />
+            </div>
+          </div>
+          <div className="notice" style={{ margin: 0 }}>
+            <Check size={14} /> Good completeness of input for preliminary
+            analysis.
+            <br />
+            <br />
+            Your personalized report will cover relevant IP areas, regulatory
+            considerations, evidence sources, and a commercialization roadmap.
+          </div>
+        </div>
+      </div>
+    );
+  if (step === 1)
+    return (
+      <div className="card form-card">
+        <h2>Step 1 of 6: Product Information</h2>
+        <div className="notice">
+          <HelpCircle size={14} /> Tell us about your product so we can
+          understand its nature, use, and possible IP and regulatory pathways.
+        </div>
+        <div className="form-grid">
+          <div className="field">
+            <label>Product Name *</label>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter product name"
+              data-testid="input-analysis-product-name"
+            />
+          </div>
+          <div className="field">
+            <label>Product Description *</label>
+            <textarea
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              data-testid="textarea-analysis-description"
+            />
+          </div>
+          <div className="field">
+            <label>Intended Use *</label>
+            <textarea
+              value={intendedUse}
+              onChange={(e) => setIntendedUse(e.target.value)}
+              placeholder="What is the intended use of this product?"
+              data-testid="textarea-analysis-use"
+            />
+          </div>
+          <div className="field">
+            <label>Key Ingredients *</label>
+            <textarea
+              value={ingredients}
+              onChange={(e) => setIngredients(e.target.value)}
+              data-testid="textarea-analysis-ingredients"
+            />
+          </div>
+          <div className="field">
+            <label>Formulation Type *</label>
+            <select
+              value={formulation}
+              onChange={(e) => setFormulation(e.target.value)}
+              data-testid="select-analysis-formulation"
+            >
+              <option>Capsule</option>
+              <option>Tablet</option>
+              <option>Powder</option>
+              <option>Oil</option>
+              <option>Syrup</option>
+            </select>
+          </div>
+          <div className="field full">
+            <label>Development Stage *</label>
+            <div className="option-grid">
+              {[
+                "Research",
+                "Prototype",
+                "Testing",
+                "Manufacturing",
+                "Already Selling",
+              ].map((x) => (
+                <button
+                  type="button"
+                  className={`option ${x === stage ? "selected" : ""}`}
+                  onClick={() => setStage(x)}
+                  key={x}
+                  data-testid={`button-stage-${x.toLowerCase()}`}
+                >
+                  {x}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  if (step === 5)
+    return (
+      <div className="card form-card">
+        <h2>Step 5 of 6: Target Market</h2>
+        <div className="notice">
+          <Globe2 size={14} /> Where do you plan to operate or sell this
+          product?
+        </div>
+        <label style={{ fontSize: 11, fontWeight: 700, color: "#35553b" }}>
+          Select Target Markets *
+        </label>
+        <div
+          className="option-grid"
+          style={{ gridTemplateColumns: "repeat(5,1fr)", marginTop: 12 }}
+        >
+          {["India", "USA", "UK", "Japan", "Other"].map((x) => (
+            <button
+              type="button"
+              className={`option ${markets.includes(x) ? "selected" : ""}`}
+              onClick={() =>
+                setMarkets(
+                  markets.includes(x)
+                    ? markets.filter((m) => m !== x)
+                    : [...markets, x],
+                )
+              }
+              key={x}
+              data-testid={`button-market-${x.toLowerCase()}`}
+            >
+              {x === "Other" ? (
+                <span className="other-flag">+</span>
+              ) : (
+                <FlagImage country={x} />
+              )}
+              <br />
+              {x}
+            </button>
+          ))}
+        </div>
+        <div className="notice" style={{ marginTop: 20 }}>
+          <Globe2 size={15} /> <b>Market Guidance</b>
+          <br />
+          Each country has unique IP laws and regulatory pathways. Consider
+          filing IP protection in key markets to secure your innovation
+          globally.
+        </div>
+      </div>
+    );
+  const labels =
+    step === 2
+      ? [
+          "Does your product use or derive from traditional Ayurvedic knowledge?",
+          "Is it based on a classical Ayurvedic formulation?",
+          "Is traditional / community knowledge involved?",
+          "Is it based on Ayurvedic literature?",
+          "Has the formulation been modified or newly developed?",
+          "Reference / source of traditional knowledge, if known",
+        ]
+      : step === 3
+        ? [
+            "Does your product use biological resources?",
+            "Biological resource type",
+            "Source of biological material",
+            "Intended commercial use",
+            "Is traditional knowledge associated with the resource?",
+          ]
+        : [
+            "Do you have a brand name?",
+            "Do you have a logo?",
+            "Does the product contain a new formulation?",
+            "Is there a new manufacturing process?",
+            "Do you have confidential know-how?",
+            "Does the product have a geographic connection?",
+          ];
+  return (
+    <div className="card form-card">
+      <h2>
+        Step {step} of 6: {steps[step - 1]}
+      </h2>
+      <div className="notice">
+        <HelpCircle size={14} /> These questions help identify relevant
+        considerations for your personalized roadmap.
+      </div>
+      <div className="form-grid">
+        {labels.map((label, i) => (
+          <div
+            className={`field ${i === labels.length - 1 && step === 2 ? "full" : ""}`}
+            key={label}
+          >
+            <label>{label} *</label>
+            {(step === 2 && i === 5) || (step === 3 && i === 3) ? (
+              <input
+                placeholder="Describe the source, use, or relevant details..."
+                data-testid={`input-step-${step}-${i}`}
+              />
+            ) : (
+              <div className="radio-group">
+                {["Yes", "No", "Not Sure"].map((x, j) => (
+                  <label className="radio-option" key={x}>
+                    <input
+                      type="radio"
+                      name={`q${step}-${i}`}
+                      defaultChecked={j === 2}
+                      data-testid={`radio-step-${step}-${i}-${x.toLowerCase().replace(" ", "-")}`}
+                    />{" "}
+                    {x}
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 function Navigator({ onToast }) {
-    const [query, setQuery] = useState('');
-    const tiles = [['Patents', FileCheck2, 'Search Ayurvedic patents from India & global sources'], ['Trademarks', Target, 'Search trademarks for brand and product names'], ['GI Registry', Globe2, 'Explore geographical indication opportunities'], ['Designs', Sparkles, 'Search registered designs for packaging'], ['Copyrights', FileText, 'Search literary, artistic & software works'], ['Plant Variety', Leaf, 'Search plant variety protection']];
-    return <Page title="IP Navigator" subtitle="Explore intellectual property databases and discover opportunities."><div className="card card-pad" style={{ display: 'flex', gap: 8 }}><input className="searchbox" value={query} onChange={e => setQuery(e.target.value)} placeholder="Search patents, trademarks, designs, GI & more..." data-testid="input-navigator-search"/><button className="btn btn-primary" onClick={() => onToast(query ? `Searching for “${query}”` : 'Enter a search term')} data-testid="button-navigator-search">Search</button></div><div className="feature-grid" style={{ gridTemplateColumns: 'repeat(3,1fr)', marginTop: 18 }}>{tiles.map(([title, Icon, copy], i) => <button className="feature" key={String(title)} onClick={() => onToast(`${title} search opened`)} data-testid={`button-navigator-${String(title).toLowerCase()}`}><Icon /><b>{title}</b><p>{copy}</p><small style={{ color: '#3b7544' }}>Explore →</small></button>)}</div><div className="card card-pad" style={{ marginTop: 18, background: '#eff6eb' }}><h2 className="section-title"><ShieldCheck size={16}/> Navigate with confidence</h2><p style={{ fontSize: 11, color: '#67766b' }}>Access authoritative databases and protect what makes your Ayurvedic innovation distinctive.</p></div></Page>;
+  const [query, setQuery] = useState("");
+  const tiles = [
+    [
+      "Patents",
+      FileCheck2,
+      "Search Ayurvedic patents from India & global sources",
+    ],
+    ["Trademarks", Target, "Search trademarks for brand and product names"],
+    ["GI Registry", Globe2, "Explore geographical indication opportunities"],
+    ["Designs", Sparkles, "Search registered designs for packaging"],
+    ["Copyrights", FileText, "Search literary, artistic & software works"],
+    ["Plant Variety", Leaf, "Search plant variety protection"],
+  ];
+  return (
+    <Page
+      title="IP Navigator"
+      subtitle="Explore intellectual property databases and discover opportunities."
+    >
+      <div className="card card-pad" style={{ display: "flex", gap: 8 }}>
+        <input
+          className="searchbox"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search patents, trademarks, designs, GI & more..."
+          data-testid="input-navigator-search"
+        />
+        <button
+          className="btn btn-primary"
+          onClick={() =>
+            onToast(query ? `Searching for “${query}”` : "Enter a search term")
+          }
+          data-testid="button-navigator-search"
+        >
+          Search
+        </button>
+      </div>
+      <div
+        className="feature-grid"
+        style={{ gridTemplateColumns: "repeat(3,1fr)", marginTop: 18 }}
+      >
+        {tiles.map(([title, Icon, copy], i) => (
+          <button
+            className="feature"
+            key={String(title)}
+            onClick={() => onToast(`${title} search opened`)}
+            data-testid={`button-navigator-${String(title).toLowerCase()}`}
+          >
+            <Icon />
+            <b>{title}</b>
+            <p>{copy}</p>
+            <small style={{ color: "#3b7544" }}>Explore →</small>
+          </button>
+        ))}
+      </div>
+      <div
+        className="card card-pad"
+        style={{ marginTop: 18, background: "#eff6eb" }}
+      >
+        <h2 className="section-title">
+          <ShieldCheck size={16} /> Navigate with confidence
+        </h2>
+        <p style={{ fontSize: 11, color: "#67766b" }}>
+          Access authoritative databases and protect what makes your Ayurvedic
+          innovation distinctive.
+        </p>
+      </div>
+    </Page>
+  );
 }
 function Regulatory({ onToast }) {
-    const checklist = [['Product Classification', 'Classify product under appropriate category', 'Completed', '100%'], ['Manufacturing License', 'Obtain relevant manufacturing license', 'In Review', '60%'], ['Labeling & Claims', 'Ensure label compliance and claim substantiation', 'Pending', '30%'], ['Safety / Quality Documentation', 'Provide safety data and quality specifications', 'In Review', '50%'], ['GMP / Facility Compliance', 'Ensure GMP compliance of manufacturing facility', 'Action Needed', '0%'], ['Market-Specific Filing', 'Submit application to regulatory authority', 'Pending', '10%']];
-    return <Page title="Regulatory Pathways" subtitle="Navigate regulatory requirements and ensure global compliance for your products." action={<select className="selectbox" data-testid="select-regulatory-product"><option>Herbal Digestive Formula</option><option>Triphala Capsule</option></select>}><div className="card card-pad market-switcher" style={{ marginBottom: 16 }}><button className="btn btn-secondary" data-testid="button-regulatory-india"><FlagImage country="India"/> India</button><button className="btn btn-quiet" data-testid="button-regulatory-usa"><FlagImage country="USA"/> USA</button></div><div className="metric-grid"><Stat label="Product Category" value="Ayurvedic" note="Herbal Health Supplement" Icon={Leaf}/><Stat label="Current Stage" value="Review" note="Documentation review" Icon={FileText}/><Stat label="Regulatory Complexity" value="Moderate" note="Multiple requirements" Icon={ShieldCheck}/><Stat label="Required Documentation" value="12 / 18" note="Documents ready" Icon={FileCheck2}/></div><div className="split"><div className="card table-card"><div className="card-pad"><h2 className="section-title">Compliance Checklist <span>India</span></h2></div><div className="table-wrap"><table><thead><tr><th>Requirement</th><th>Description</th><th>Status</th><th>Progress</th><th>Action</th></tr></thead><tbody>{checklist.map((r, i) => <tr key={r[0]} data-testid={`row-checklist-${i}`}><td><strong>{r[0]}</strong></td><td>{r[1]}</td><td><span className={showClass(r[2])}>{r[2]}</span></td><td><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><span>{r[3]}</span><div className="progress-line" style={{ width: 56 }}><i style={{ width: r[3] }}/></div></div></td><td><button className="btn btn-quiet" onClick={() => onToast(`${r[0]} details opened`)} data-testid={`button-checklist-${i}`}><ArrowUpRight size={14}/></button></td></tr>)}</tbody></table></div></div><div className="side-stack"><div className="card card-pad"><h2 className="section-title">Regulatory Timeline</h2>{['Documentation Review', 'Application Preparation', 'Submission to Authority', 'Authority Review', 'Approval & License Issuance'].map((x, i) => <div className="list-row" key={x}><span className="dot-icon">{i < 1 ? <Check size={13}/> : <span>{i + 1}</span>}</span><div className="row-main"><b>{x}</b><small>{i === 0 ? 'May 05, 2024' : i === 1 ? 'May 15, 2024' : 'Pending'}</small></div><span className={showClass(i < 1 ? 'Completed' : i === 1 ? 'In Review' : 'Pending')}>{i < 1 ? 'Completed' : i === 1 ? 'In Review' : 'Pending'}</span></div>)}</div><div className="card card-pad"><h2 className="section-title">Key Authorities</h2><div className="info-list"><div className="info-item"><span><FlagImage country="India"/> India</span><b>Ministry of Ayush</b></div><div className="info-item"><span><FlagImage country="USA"/> USA</span><b>FDA – Dietary Supplement</b></div></div></div></div></div><button className="btn btn-primary" onClick={() => onToast('Full regulatory roadmap opened')} style={{ display: 'flex', margin: '18px auto 0' }} data-testid="button-full-roadmap">View Full Regulatory Roadmap <ArrowRight size={14}/></button></Page>;
+  const checklist = [
+    [
+      "Product Classification",
+      "Classify product under appropriate category",
+      "Completed",
+      "100%",
+    ],
+    [
+      "Manufacturing License",
+      "Obtain relevant manufacturing license",
+      "In Review",
+      "60%",
+    ],
+    [
+      "Labeling & Claims",
+      "Ensure label compliance and claim substantiation",
+      "Pending",
+      "30%",
+    ],
+    [
+      "Safety / Quality Documentation",
+      "Provide safety data and quality specifications",
+      "In Review",
+      "50%",
+    ],
+    [
+      "GMP / Facility Compliance",
+      "Ensure GMP compliance of manufacturing facility",
+      "Action Needed",
+      "0%",
+    ],
+    [
+      "Market-Specific Filing",
+      "Submit application to regulatory authority",
+      "Pending",
+      "10%",
+    ],
+  ];
+  return (
+    <Page
+      title="Regulatory Pathways"
+      subtitle="Navigate regulatory requirements and ensure global compliance for your products."
+      action={
+        <select className="selectbox" data-testid="select-regulatory-product">
+          <option>Herbal Digestive Formula</option>
+          <option>Triphala Capsule</option>
+        </select>
+      }
+    >
+      <div
+        className="card card-pad market-switcher"
+        style={{ marginBottom: 16 }}
+      >
+        <button
+          className="btn btn-secondary"
+          data-testid="button-regulatory-india"
+        >
+          <FlagImage country="India" /> India
+        </button>
+        <button className="btn btn-quiet" data-testid="button-regulatory-usa">
+          <FlagImage country="USA" /> USA
+        </button>
+      </div>
+      <div className="metric-grid">
+        <Stat
+          label="Product Category"
+          value="Ayurvedic"
+          note="Herbal Health Supplement"
+          Icon={Leaf}
+        />
+        <Stat
+          label="Current Stage"
+          value="Review"
+          note="Documentation review"
+          Icon={FileText}
+        />
+        <Stat
+          label="Regulatory Complexity"
+          value="Moderate"
+          note="Multiple requirements"
+          Icon={ShieldCheck}
+        />
+        <Stat
+          label="Required Documentation"
+          value="12 / 18"
+          note="Documents ready"
+          Icon={FileCheck2}
+        />
+      </div>
+      <div className="split">
+        <div className="card table-card">
+          <div className="card-pad">
+            <h2 className="section-title">
+              Compliance Checklist <span>India</span>
+            </h2>
+          </div>
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Requirement</th>
+                  <th>Description</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {checklist.map((r, i) => (
+                  <tr key={r[0]} data-testid={`row-checklist-${i}`}>
+                    <td>
+                      <strong>{r[0]}</strong>
+                    </td>
+                    <td>{r[1]}</td>
+                    <td>
+                      <span className={showClass(r[2])}>{r[2]}</span>
+                    </td>
+                    <td>
+                      <div
+                        style={{
+                          display: "flex",
+                          gap: 8,
+                          alignItems: "center",
+                        }}
+                      >
+                        <span>{r[3]}</span>
+                        <div className="progress-line" style={{ width: 56 }}>
+                          <i style={{ width: r[3] }} />
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <button
+                        className="btn btn-quiet"
+                        onClick={() => onToast(`${r[0]} details opened`)}
+                        data-testid={`button-checklist-${i}`}
+                      >
+                        <ArrowUpRight size={14} />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="side-stack">
+          <div className="card card-pad">
+            <h2 className="section-title">Regulatory Timeline</h2>
+            {[
+              "Documentation Review",
+              "Application Preparation",
+              "Submission to Authority",
+              "Authority Review",
+              "Approval & License Issuance",
+            ].map((x, i) => (
+              <div className="list-row" key={x}>
+                <span className="dot-icon">
+                  {i < 1 ? <Check size={13} /> : <span>{i + 1}</span>}
+                </span>
+                <div className="row-main">
+                  <b>{x}</b>
+                  <small>
+                    {i === 0
+                      ? "May 05, 2024"
+                      : i === 1
+                        ? "May 15, 2024"
+                        : "Pending"}
+                  </small>
+                </div>
+                <span
+                  className={showClass(
+                    i < 1 ? "Completed" : i === 1 ? "In Review" : "Pending",
+                  )}
+                >
+                  {i < 1 ? "Completed" : i === 1 ? "In Review" : "Pending"}
+                </span>
+              </div>
+            ))}
+          </div>
+          <div className="card card-pad">
+            <h2 className="section-title">Key Authorities</h2>
+            <div className="info-list">
+              <div className="info-item">
+                <span>
+                  <FlagImage country="India" /> India
+                </span>
+                <b>Ministry of Ayush</b>
+              </div>
+              <div className="info-item">
+                <span>
+                  <FlagImage country="USA" /> USA
+                </span>
+                <b>FDA – Dietary Supplement</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        className="btn btn-primary"
+        onClick={() => onToast("Full regulatory roadmap opened")}
+        style={{ display: "flex", margin: "18px auto 0" }}
+        data-testid="button-full-roadmap"
+      >
+        View Full Regulatory Roadmap <ArrowRight size={14} />
+      </button>
+    </Page>
+  );
 }
 function TKAbs() {
-    const reviews = [['Classical Text Match', 'Product ingredients matched with classical Ayurvedic texts.', 'Match Found'], ['Ayurvedic Literature Reference', 'References found in authoritative Ayurvedic literature.', 'References Found'], ['Community Knowledge Indicator', 'Usage documented in community or ethnobotanical sources.', 'Partial Evidence'], ['Modified Formulation Assessment', 'Assessment of novelty based on formulation and claimed use.', 'Modifications Detected']];
-    return <Page title="Traditional Knowledge & ABS Compliance" subtitle="Evaluate traditional knowledge relevance and ensure Access & Benefit-sharing (ABS) compliance."><div className="metric-grid"><Stat label="TK Relevance" value="87%" note="● High Relevance" Icon={BookOpen}/><Stat label="ABS Applicability" value="Applicable" note="● Requires Compliance" Icon={Users}/><Stat label="Biological Resource Origin" value="India" note="● In-country" Icon={Globe2}/><Stat label="Evidence Match Confidence" value="78%" note="● Good" Icon={Target}/></div><div className="split" style={{ marginTop: 18 }}><div className="card card-pad"><h2 className="section-title">Traditional Knowledge Review</h2>{reviews.map((r, i) => <div className="list-row" key={r[0]} data-testid={`row-tk-review-${i}`}><span className="dot-icon"><BookOpen size={13}/></span><div className="row-main"><b>{r[0]}</b><small>{r[1]}</small></div><span className={showClass(r[2])}>{r[2]}</span><ChevronRight size={14}/></div>)}<h2 className="section-title" style={{ marginTop: 22 }}>TKDL / Prior-Art Results <span>View full results</span></h2><div className="table-wrap"><table><thead><tr><th>Source</th><th>Reference ID</th><th>Relevance</th><th>Match Confidence</th></tr></thead><tbody>{[['TKDL', 'TKDL/IND/2021/000987', 'High', '85%'], ['TKDL', 'TKDL/IND/2019/004562', 'Medium', '72%'], ['AYUSH e-Library', 'AYUSH/AL/2018/1123', 'Medium', '65%'], ['NMPB Database', 'NMPB/ETHNO/2020/334', 'Low', '40%']].map(r => <tr key={r[1]}><td>{r[0]}</td><td>{r[1]}</td><td>{r[2]}</td><td>{r[3]}</td></tr>)}</tbody></table></div></div><div className="card card-pad"><h2 className="section-title">ABS Compliance</h2><div className="info-list">{[['Biological Resource Type', 'Medicinal Plant'], ['Source of Material', 'Wild Harvested'], ['Commercial Use', 'Yes'], ['NBA / SBB Approval Status', 'Required'], ['Benefit-sharing Obligation', 'Applicable']].map(x => <div className="info-item" key={x[0]}><span>{x[0]}</span><b>{x[1]}</b></div>)}</div><h2 className="section-title" style={{ marginTop: 18 }}>Compliance Checklist</h2>{['Biological resource is identified and documented', 'Country of origin verified', 'Prior Informed Consent (PIC) obtained', 'Mutually Agreed Terms (MAT) documented', 'Benefit-sharing plan defined', 'Approval from NBA/SBB uploaded'].map((x, i) => <div className="list-row" key={x}><span className="dot-icon">{i < 2 || i === 4 ? <Check size={13}/> : <span>!</span>}</span><div className="row-main"><small style={{ fontSize: 10, color: '#4c5d50' }}>{x}</small></div><span className={showClass(i < 2 || i === 4 ? 'Compliant' : i < 4 ? 'Pending' : 'Not Started')}>{i < 2 || i === 4 ? 'Compliant' : i < 4 ? 'Pending' : 'Not Started'}</span></div>)}</div></div><div className="card card-pad" style={{ marginTop: 18, background: '#f0f6eb' }}><h2 className="section-title"><Leaf size={15}/> What this means</h2><p style={{ fontSize: 11, color: '#637066', margin: 0 }}>Your product shows high relevance to established traditional knowledge with good evidence match. Since it involves medicinal biological resources with commercial use, ABS compliance is applicable.</p></div></Page>;
+  const reviews = [
+    [
+      "Classical Text Match",
+      "Product ingredients matched with classical Ayurvedic texts.",
+      "Match Found",
+    ],
+    [
+      "Ayurvedic Literature Reference",
+      "References found in authoritative Ayurvedic literature.",
+      "References Found",
+    ],
+    [
+      "Community Knowledge Indicator",
+      "Usage documented in community or ethnobotanical sources.",
+      "Partial Evidence",
+    ],
+    [
+      "Modified Formulation Assessment",
+      "Assessment of novelty based on formulation and claimed use.",
+      "Modifications Detected",
+    ],
+  ];
+  return (
+    <Page
+      title="Traditional Knowledge & ABS Compliance"
+      subtitle="Evaluate traditional knowledge relevance and ensure Access & Benefit-sharing (ABS) compliance."
+    >
+      <div className="metric-grid">
+        <Stat
+          label="TK Relevance"
+          value="87%"
+          note="● High Relevance"
+          Icon={BookOpen}
+        />
+        <Stat
+          label="ABS Applicability"
+          value="Applicable"
+          note="● Requires Compliance"
+          Icon={Users}
+        />
+        <Stat
+          label="Biological Resource Origin"
+          value="India"
+          note="● In-country"
+          Icon={Globe2}
+        />
+        <Stat
+          label="Evidence Match Confidence"
+          value="78%"
+          note="● Good"
+          Icon={Target}
+        />
+      </div>
+      <div className="split" style={{ marginTop: 18 }}>
+        <div className="card card-pad">
+          <h2 className="section-title">Traditional Knowledge Review</h2>
+          {reviews.map((r, i) => (
+            <div
+              className="list-row"
+              key={r[0]}
+              data-testid={`row-tk-review-${i}`}
+            >
+              <span className="dot-icon">
+                <BookOpen size={13} />
+              </span>
+              <div className="row-main">
+                <b>{r[0]}</b>
+                <small>{r[1]}</small>
+              </div>
+              <span className={showClass(r[2])}>{r[2]}</span>
+              <ChevronRight size={14} />
+            </div>
+          ))}
+          <h2 className="section-title" style={{ marginTop: 22 }}>
+            TKDL / Prior-Art Results <span>View full results</span>
+          </h2>
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Reference ID</th>
+                  <th>Relevance</th>
+                  <th>Match Confidence</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["TKDL", "TKDL/IND/2021/000987", "High", "85%"],
+                  ["TKDL", "TKDL/IND/2019/004562", "Medium", "72%"],
+                  ["AYUSH e-Library", "AYUSH/AL/2018/1123", "Medium", "65%"],
+                  ["NMPB Database", "NMPB/ETHNO/2020/334", "Low", "40%"],
+                ].map((r) => (
+                  <tr key={r[1]}>
+                    <td>{r[0]}</td>
+                    <td>{r[1]}</td>
+                    <td>{r[2]}</td>
+                    <td>{r[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="card card-pad">
+          <h2 className="section-title">ABS Compliance</h2>
+          <div className="info-list">
+            {[
+              ["Biological Resource Type", "Medicinal Plant"],
+              ["Source of Material", "Wild Harvested"],
+              ["Commercial Use", "Yes"],
+              ["NBA / SBB Approval Status", "Required"],
+              ["Benefit-sharing Obligation", "Applicable"],
+            ].map((x) => (
+              <div className="info-item" key={x[0]}>
+                <span>{x[0]}</span>
+                <b>{x[1]}</b>
+              </div>
+            ))}
+          </div>
+          <h2 className="section-title" style={{ marginTop: 18 }}>
+            Compliance Checklist
+          </h2>
+          {[
+            "Biological resource is identified and documented",
+            "Country of origin verified",
+            "Prior Informed Consent (PIC) obtained",
+            "Mutually Agreed Terms (MAT) documented",
+            "Benefit-sharing plan defined",
+            "Approval from NBA/SBB uploaded",
+          ].map((x, i) => (
+            <div className="list-row" key={x}>
+              <span className="dot-icon">
+                {i < 2 || i === 4 ? <Check size={13} /> : <span>!</span>}
+              </span>
+              <div className="row-main">
+                <small style={{ fontSize: 10, color: "#4c5d50" }}>{x}</small>
+              </div>
+              <span
+                className={showClass(
+                  i < 2 || i === 4
+                    ? "Compliant"
+                    : i < 4
+                      ? "Pending"
+                      : "Not Started",
+                )}
+              >
+                {i < 2 || i === 4
+                  ? "Compliant"
+                  : i < 4
+                    ? "Pending"
+                    : "Not Started"}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div
+        className="card card-pad"
+        style={{ marginTop: 18, background: "#f0f6eb" }}
+      >
+        <h2 className="section-title">
+          <Leaf size={15} /> What this means
+        </h2>
+        <p style={{ fontSize: 11, color: "#637066", margin: 0 }}>
+          Your product shows high relevance to established traditional knowledge
+          with good evidence match. Since it involves medicinal biological
+          resources with commercial use, ABS compliance is applicable.
+        </p>
+      </div>
+    </Page>
+  );
 }
 function Markets({ onToast }) {
-    const marketData = [['India', '87%', 'High', 'Low', '3–6 months'], ['USA', '72%', 'High', 'Medium', '6–12 months'], ['UK', '61%', 'Medium', 'High', '9–15 months'], ['Japan', '48%', 'Medium', 'High', '12–18 months']];
-    return <Page title="Global Markets" subtitle="Explore global opportunities and assess market readiness for your products." action={<button className="btn btn-primary" onClick={() => onToast('Readiness report exported')} data-testid="button-export-market"><Download size={13}/> Export Report <ChevronDown size={13}/></button>}><div className="market-grid">{marketData.map((m, i) => <div className="card market-card" key={m[0]} data-testid={`card-market-${m[0].toLowerCase()}`}><div className="market-card-head"><span><FlagImage country={m[0]}/>{m[0]}</span><div className="score">{m[1]}</div></div><div className="market-details"><div>Opportunity <b>{m[2]}</b></div><div>Ease of Entry <b>{i < 2 ? '●●●●' : '●●●○'}</b></div><div>Demand <b>{i === 0 ? '●●●●●' : '●●●○○'}</b></div></div><button className="btn btn-quiet" onClick={() => onToast(`${m[0]} market details opened`)} data-testid={`button-market-details-${m[0].toLowerCase()}`}>View Details <ArrowRight size={13}/></button></div>)}</div><div className="split" style={{ marginTop: 18 }}><div className="card table-card"><div className="card-pad"><h2 className="section-title">Market Comparison Matrix</h2></div><div className="table-wrap"><table className="matrix"><thead><tr><th>Criteria</th><th><FlagImage country="India"/> India</th><th><FlagImage country="USA"/> USA</th><th><FlagImage country="UK"/> UK</th><th><FlagImage country="Japan"/> Japan</th></tr></thead><tbody>{[['Market Opportunity', 'High', 'High', 'Medium', 'Medium'], ['Regulatory Difficulty', 'Low', 'Medium', 'High', 'High'], ['IP Importance', 'High', 'High', 'High', 'Medium'], ['Labeling Complexity', 'Low', 'Medium', 'High', 'High'], ['Estimated Time to Launch', '3–6 months', '6–12 months', '9–15 months', '12–18 months'], ['Overall Readiness Score', '87%', '72%', '61%', '48%']].map(r => <tr key={r[0]}>{r.map((x, i) => <td key={`${r[0]}-${i}`} style={i === 0 ? { fontWeight: 700 } : undefined}>{x}</td>)}</tr>)}</tbody></table></div></div><div className="side-stack"><div className="card card-pad"><h2 className="section-title">Export Readiness Checklist</h2>{['Product documentation complete', 'IP protection in target market', 'Regulatory pathway identified', 'Labeling & claims mapped', 'Local partner identified', 'Go-to-market strategy defined'].map((x, i) => <div className="list-row" key={x}><span className="dot-icon">{i < 4 ? <Check size={12}/> : <span>○</span>}</span><div className="row-main"><small>{x}</small></div></div>)}<div style={{ fontSize: 11, fontWeight: 700, marginTop: 8 }}>Overall Export Readiness <span style={{ float: 'right' }}>4 / 6 Completed</span></div></div><div className="card card-pad"><h2 className="section-title"><BarChart3 size={15}/> Readiness Score Overview</h2><ReadinessBarChart /></div></div></div></Page>;
+  const marketData = [
+    ["India", "87%", "High", "Low", "3–6 months"],
+    ["USA", "72%", "High", "Medium", "6–12 months"],
+    ["UK", "61%", "Medium", "High", "9–15 months"],
+    ["Japan", "48%", "Medium", "High", "12–18 months"],
+  ];
+  return (
+    <Page
+      title="Global Markets"
+      subtitle="Explore global opportunities and assess market readiness for your products."
+      action={
+        <button
+          className="btn btn-primary"
+          onClick={() => onToast("Readiness report exported")}
+          data-testid="button-export-market"
+        >
+          <Download size={13} /> Export Report <ChevronDown size={13} />
+        </button>
+      }
+    >
+      <div className="market-grid">
+        {marketData.map((m, i) => (
+          <div
+            className="card market-card"
+            key={m[0]}
+            data-testid={`card-market-${m[0].toLowerCase()}`}
+          >
+            <div className="market-card-head">
+              <span>
+                <FlagImage country={m[0]} />
+                {m[0]}
+              </span>
+              <div className="score">{m[1]}</div>
+            </div>
+            <div className="market-details">
+              <div>
+                Opportunity <b>{m[2]}</b>
+              </div>
+              <div>
+                Ease of Entry <b>{i < 2 ? "●●●●" : "●●●○"}</b>
+              </div>
+              <div>
+                Demand <b>{i === 0 ? "●●●●●" : "●●●○○"}</b>
+              </div>
+            </div>
+            <button
+              className="btn btn-quiet"
+              onClick={() => onToast(`${m[0]} market details opened`)}
+              data-testid={`button-market-details-${m[0].toLowerCase()}`}
+            >
+              View Details <ArrowRight size={13} />
+            </button>
+          </div>
+        ))}
+      </div>
+      <div className="split" style={{ marginTop: 18 }}>
+        <div className="card table-card">
+          <div className="card-pad">
+            <h2 className="section-title">Market Comparison Matrix</h2>
+          </div>
+          <div className="table-wrap">
+            <table className="matrix">
+              <thead>
+                <tr>
+                  <th>Criteria</th>
+                  <th>
+                    <FlagImage country="India" /> India
+                  </th>
+                  <th>
+                    <FlagImage country="USA" /> USA
+                  </th>
+                  <th>
+                    <FlagImage country="UK" /> UK
+                  </th>
+                  <th>
+                    <FlagImage country="Japan" /> Japan
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ["Market Opportunity", "High", "High", "Medium", "Medium"],
+                  ["Regulatory Difficulty", "Low", "Medium", "High", "High"],
+                  ["IP Importance", "High", "High", "High", "Medium"],
+                  ["Labeling Complexity", "Low", "Medium", "High", "High"],
+                  [
+                    "Estimated Time to Launch",
+                    "3–6 months",
+                    "6–12 months",
+                    "9–15 months",
+                    "12–18 months",
+                  ],
+                  ["Overall Readiness Score", "87%", "72%", "61%", "48%"],
+                ].map((r) => (
+                  <tr key={r[0]}>
+                    {r.map((x, i) => (
+                      <td
+                        key={`${r[0]}-${i}`}
+                        style={i === 0 ? { fontWeight: 700 } : undefined}
+                      >
+                        {x}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="side-stack">
+          <div className="card card-pad">
+            <h2 className="section-title">Export Readiness Checklist</h2>
+            {[
+              "Product documentation complete",
+              "IP protection in target market",
+              "Regulatory pathway identified",
+              "Labeling & claims mapped",
+              "Local partner identified",
+              "Go-to-market strategy defined",
+            ].map((x, i) => (
+              <div className="list-row" key={x}>
+                <span className="dot-icon">
+                  {i < 4 ? <Check size={12} /> : <span>○</span>}
+                </span>
+                <div className="row-main">
+                  <small>{x}</small>
+                </div>
+              </div>
+            ))}
+            <div style={{ fontSize: 11, fontWeight: 700, marginTop: 8 }}>
+              Overall Export Readiness{" "}
+              <span style={{ float: "right" }}>4 / 6 Completed</span>
+            </div>
+          </div>
+          <div className="card card-pad">
+            <h2 className="section-title">
+              <BarChart3 size={15} /> Readiness Score Overview
+            </h2>
+            <ReadinessBarChart />
+          </div>
+        </div>
+      </div>
+    </Page>
+  );
 }
 function Assistant({ onToast }) {
-    const [messages, setMessages] = useState([{ role: 'user', text: 'Can a herbal digestive formula be protected and sold in India and the USA?' }, { role: 'bot', text: 'Yes, a herbal digestive formula can be protected and sold in both India and the USA, provided you navigate the respective IP and regulatory frameworks appropriately.' }]);
-    const [input, setInput] = useState('');
-    const prompts = ['How can I patent a herbal formulation in India?', 'What are the regulatory steps for selling herbal products in the USA?', 'How do I check if my formulation is novel?', 'Can I use traditional knowledge in my patent?', 'What are the labeling requirements for herbal supplements?'];
-    const send = async (text = input) => { if (!text.trim()) return; const next=[...messages,{role:'user',text}]; setMessages(next); setInput(''); try { const data=await askAssistant({message:text,history:next}); const answer=data.data || data; setMessages([...next,{role:'bot',text:answer.answer || 'No answer returned.',evidence:answer.evidence || []}]); } catch(e) { setMessages([...next,{role:'bot',text:e.message || 'Assistant unavailable.'}]); } };
-    return <Page title="AI Assistant" subtitle="Your intelligent partner for IP, regulatory, and market insights."><div className="chat-layout"><div className="card chat-window"><div className="messages">{messages.map((m, i) => <div className={`message ${m.role}`} key={i} data-testid={`message-${m.role}-${i}`}>{m.text}{m.role === 'bot' && <div style={{ marginTop: 12, paddingTop: 10, borderTop: '1px solid #e6eae2', fontSize: 10, color: '#5e725f' }}><b>Key insight</b><br />Relevant guidance is cited to trusted legal, regulatory, and traditional knowledge sources.</div>}</div>)}</div><div className="composer"><input value={input} onChange={e => setInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && send()} placeholder="Ask me anything about IP, regulatory, or market insights..." data-testid="input-assistant-message"/><button className="btn btn-primary" onClick={() => send()} data-testid="button-assistant-send"><Send size={14}/></button></div></div><aside className="side-stack"><div className="card card-pad"><h2 className="section-title"><Sparkles size={15}/> Suggested Prompts</h2><div className="prompt-list">{prompts.map((p, i) => <button className="prompt" onClick={() => send(p)} key={p} data-testid={`button-suggested-prompt-${i}`}>{p}<ChevronRight size={13} style={{ float: 'right' }}/></button>)}</div></div><div className="card card-pad"><h2 className="section-title"><MessageCircle size={15}/> Conversation Context <span><button className="btn btn-quiet" onClick={() => { setMessages([]); onToast('Conversation cleared'); }} data-testid="button-assistant-clear">Clear</button></span></h2>{['Herbal digestive formula protection in India & USA', 'Regulatory classification for herbal supplements', 'Patentability of plant extracts', 'Trademark for herbal brand'].map((x, i) => <div className="list-row" key={x}><span className="dot-icon"><span>{i + 1}</span></span><div className="row-main"><small>{x}</small></div></div>)}</div><div className="card card-pad"><h2 className="section-title"><ShieldCheck size={15}/> Confidence Level</h2><div className="confidence-score">87%</div><div className="progress-line"><i style={{ width: '87%' }}/></div><p style={{ fontSize: 10, color: '#68776b' }}>This response is based on trusted legal and regulatory sources.</p></div></aside></div></Page>;
+  const [messages, setMessages] = useState([
+    {
+      role: "user",
+      text: "Can a herbal digestive formula be protected and sold in India and the USA?",
+    },
+    {
+      role: "bot",
+      text: "Yes, a herbal digestive formula can be protected and sold in both India and the USA, provided you navigate the respective IP and regulatory frameworks appropriately.",
+    },
+  ]);
+  const [input, setInput] = useState("");
+  const prompts = [
+    "How can I patent a herbal formulation in India?",
+    "What are the regulatory steps for selling herbal products in the USA?",
+    "How do I check if my formulation is novel?",
+    "Can I use traditional knowledge in my patent?",
+    "What are the labeling requirements for herbal supplements?",
+  ];
+  const send = async (text = input) => {
+    if (!text.trim()) return;
+    const next = [...messages, { role: "user", text }];
+    setMessages(next);
+    setInput("");
+    try {
+      const data = await askAssistant({ message: text, history: next });
+      const answer = data.data || data;
+      setMessages([
+        ...next,
+        {
+          role: "bot",
+          text: answer.answer || "No answer returned.",
+          evidence: answer.evidence || [],
+        },
+      ]);
+    } catch (e) {
+      setMessages([
+        ...next,
+        { role: "bot", text: e.message || "Assistant unavailable." },
+      ]);
+    }
+  };
+  return (
+    <Page
+      title="AI Assistant"
+      subtitle="Your intelligent partner for IP, regulatory, and market insights."
+    >
+      <div className="chat-layout">
+        <div className="card chat-window">
+          <div className="messages">
+            {messages.map((m, i) => (
+              <div
+                className={`message ${m.role}`}
+                key={i}
+                data-testid={`message-${m.role}-${i}`}
+              >
+                {m.text}
+                {m.role === "bot" && (
+                  <div
+                    style={{
+                      marginTop: 12,
+                      paddingTop: 10,
+                      borderTop: "1px solid #e6eae2",
+                      fontSize: 10,
+                      color: "#5e725f",
+                    }}
+                  >
+                    <b>Key insight</b>
+                    <br />
+                    Relevant guidance is cited to trusted legal, regulatory, and
+                    traditional knowledge sources.
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="composer">
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && send()}
+              placeholder="Ask me anything about IP, regulatory, or market insights..."
+              data-testid="input-assistant-message"
+            />
+            <button
+              className="btn btn-primary"
+              onClick={() => send()}
+              data-testid="button-assistant-send"
+            >
+              <Send size={14} />
+            </button>
+          </div>
+        </div>
+        <aside className="side-stack">
+          <div className="card card-pad">
+            <h2 className="section-title">
+              <Sparkles size={15} /> Suggested Prompts
+            </h2>
+            <div className="prompt-list">
+              {prompts.map((p, i) => (
+                <button
+                  className="prompt"
+                  onClick={() => send(p)}
+                  key={p}
+                  data-testid={`button-suggested-prompt-${i}`}
+                >
+                  {p}
+                  <ChevronRight size={13} style={{ float: "right" }} />
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="card card-pad">
+            <h2 className="section-title">
+              <MessageCircle size={15} /> Conversation Context{" "}
+              <span>
+                <button
+                  className="btn btn-quiet"
+                  onClick={() => {
+                    setMessages([]);
+                    onToast("Conversation cleared");
+                  }}
+                  data-testid="button-assistant-clear"
+                >
+                  Clear
+                </button>
+              </span>
+            </h2>
+            {[
+              "Herbal digestive formula protection in India & USA",
+              "Regulatory classification for herbal supplements",
+              "Patentability of plant extracts",
+              "Trademark for herbal brand",
+            ].map((x, i) => (
+              <div className="list-row" key={x}>
+                <span className="dot-icon">
+                  <span>{i + 1}</span>
+                </span>
+                <div className="row-main">
+                  <small>{x}</small>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="card card-pad">
+            <h2 className="section-title">
+              <ShieldCheck size={15} /> Confidence Level
+            </h2>
+            <div className="confidence-score">87%</div>
+            <div className="progress-line">
+              <i style={{ width: "87%" }} />
+            </div>
+            <p style={{ fontSize: 10, color: "#68776b" }}>
+              This response is based on trusted legal and regulatory sources.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </Page>
+  );
 }
 function Evidence({ onToast }) {
-    const [selected, setSelected] = useState(0);
-    const [search, setSearch] = useState('');
-    const rows = evidence.filter(x => x[0].toLowerCase().includes(search.toLowerCase()));
-    return <Page title="Evidence Center" subtitle="Discover, evaluate and cite credible sources that strengthen your product's trust and IP."><div className="metric-grid"><Stat label="Total Sources Reviewed" value="1,248" note="↗ 18% vs last month" Icon={BookOpen}/><Stat label="Government Sources" value="412" note="33% of total" Icon={PanelTop}/><Stat label="Traditional Texts" value="286" note="23% of total" Icon={BookOpen}/><Stat label="Patent Databases" value="324" note="26% of total" Icon={FileCheck2}/></div><div className="card table-card"><div className="table-toolbar"><input className="searchbox" value={search} onChange={e => setSearch(e.target.value)} placeholder="Search evidence by keyword, source, condition..." data-testid="input-evidence-search"/><select className="selectbox" data-testid="select-evidence-type"><option>All Source Types</option><option>Government Source</option><option>Traditional Text</option><option>Patent Database</option></select><select className="selectbox" data-testid="select-evidence-category"><option>All Categories</option><option>Ayurvedic</option><option>Regulatory</option></select><button className="btn btn-secondary" onClick={() => onToast('More filters opened')} data-testid="button-evidence-filters">More Filters</button></div><div className="split" style={{ gap: 0 }}><div className="table-wrap"><table><thead><tr><th>#</th><th>Source Title</th><th>Source Type</th><th>Relevance</th></tr></thead><tbody>{rows.map((r, i) => <tr key={r[0]} onClick={() => setSelected(evidence.findIndex(x => x[0] === r[0]))} style={{ cursor: 'pointer' }} data-testid={`row-evidence-${i}`}><td>{i + 1}</td><td><strong>{r[0]}</strong><small style={{ display: 'block', fontSize: 9, color: '#7a847b' }}>{r[3]}</small></td><td><span className="pill gray">{r[1]}</span></td><td><b>{r[2]}</b><div className="progress-line" style={{ width: 68, marginTop: 5 }}><i style={{ width: r[2] }}/></div></td></tr>)}</tbody></table></div><div className="card-pad" style={{ borderLeft: '1px solid #e3e5dc' }}><h2 className="section-title">Selected Evidence</h2><div className="dot-icon" style={{ marginBottom: 10 }}><BookOpen size={15}/></div><h3 style={{ fontSize: 14, color: '#304b34', margin: '0 0 8px' }}>{evidence[selected]?.[0]}</h3><p style={{ fontSize: 10, color: '#758076' }}>Source category: {evidence[selected]?.[1]}<br />Original language: {evidence[selected]?.[3]}<br />Relevance score: {evidence[selected]?.[2]}</p><div className="notice">This source provides useful historical, scientific, and regulatory context for the product under review.</div><button className="btn btn-primary" onClick={() => onToast('Source citation copied')} data-testid="button-cite-evidence"><FileText size={13}/> Cite Source</button></div></div></div></Page>;
+  const [selected, setSelected] = useState(0);
+  const [search, setSearch] = useState("");
+  const rows = evidence.filter((x) =>
+    x[0].toLowerCase().includes(search.toLowerCase()),
+  );
+  return (
+    <Page
+      title="Evidence Center"
+      subtitle="Discover, evaluate and cite credible sources that strengthen your product's trust and IP."
+    >
+      <div className="metric-grid">
+        <Stat
+          label="Total Sources Reviewed"
+          value="1,248"
+          note="↗ 18% vs last month"
+          Icon={BookOpen}
+        />
+        <Stat
+          label="Government Sources"
+          value="412"
+          note="33% of total"
+          Icon={PanelTop}
+        />
+        <Stat
+          label="Traditional Texts"
+          value="286"
+          note="23% of total"
+          Icon={BookOpen}
+        />
+        <Stat
+          label="Patent Databases"
+          value="324"
+          note="26% of total"
+          Icon={FileCheck2}
+        />
+      </div>
+      <div className="card table-card">
+        <div className="table-toolbar">
+          <input
+            className="searchbox"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder="Search evidence by keyword, source, condition..."
+            data-testid="input-evidence-search"
+          />
+          <select className="selectbox" data-testid="select-evidence-type">
+            <option>All Source Types</option>
+            <option>Government Source</option>
+            <option>Traditional Text</option>
+            <option>Patent Database</option>
+          </select>
+          <select className="selectbox" data-testid="select-evidence-category">
+            <option>All Categories</option>
+            <option>Ayurvedic</option>
+            <option>Regulatory</option>
+          </select>
+          <button
+            className="btn btn-secondary"
+            onClick={() => onToast("More filters opened")}
+            data-testid="button-evidence-filters"
+          >
+            More Filters
+          </button>
+        </div>
+        <div className="split" style={{ gap: 0 }}>
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Source Title</th>
+                  <th>Source Type</th>
+                  <th>Relevance</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((r, i) => (
+                  <tr
+                    key={r[0]}
+                    onClick={() =>
+                      setSelected(evidence.findIndex((x) => x[0] === r[0]))
+                    }
+                    style={{ cursor: "pointer" }}
+                    data-testid={`row-evidence-${i}`}
+                  >
+                    <td>{i + 1}</td>
+                    <td>
+                      <strong>{r[0]}</strong>
+                      <small
+                        style={{
+                          display: "block",
+                          fontSize: 9,
+                          color: "#7a847b",
+                        }}
+                      >
+                        {r[3]}
+                      </small>
+                    </td>
+                    <td>
+                      <span className="pill gray">{r[1]}</span>
+                    </td>
+                    <td>
+                      <b>{r[2]}</b>
+                      <div
+                        className="progress-line"
+                        style={{ width: 68, marginTop: 5 }}
+                      >
+                        <i style={{ width: r[2] }} />
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="card-pad" style={{ borderLeft: "1px solid #e3e5dc" }}>
+            <h2 className="section-title">Selected Evidence</h2>
+            <div className="dot-icon" style={{ marginBottom: 10 }}>
+              <BookOpen size={15} />
+            </div>
+            <h3 style={{ fontSize: 14, color: "#304b34", margin: "0 0 8px" }}>
+              {evidence[selected]?.[0]}
+            </h3>
+            <p style={{ fontSize: 10, color: "#758076" }}>
+              Source category: {evidence[selected]?.[1]}
+              <br />
+              Original language: {evidence[selected]?.[3]}
+              <br />
+              Relevance score: {evidence[selected]?.[2]}
+            </p>
+            <div className="notice">
+              This source provides useful historical, scientific, and regulatory
+              context for the product under review.
+            </div>
+            <button
+              className="btn btn-primary"
+              onClick={() => onToast("Source citation copied")}
+              data-testid="button-cite-evidence"
+            >
+              <FileText size={13} /> Cite Source
+            </button>
+          </div>
+        </div>
+      </div>
+    </Page>
+  );
 }
 function Reports({ onToast }) {
-    const [filter, setFilter] = useState('All');
-    const shown = reports.filter(r => filter === 'All' || r[3] === filter);
-    return <Page title="Reports & Exports" subtitle="Generate, manage and export insights from your product intelligence." action={<button className="btn btn-primary" onClick={() => onToast('New report draft created')} data-testid="button-new-report"><FileText size={14}/> New Report <ChevronDown size={13}/></button>}><div className="metric-grid"><Stat label="Total Reports" value="42" note="↗ 18% vs last month" Icon={FileText}/><Stat label="Draft Reports" value="07" note="17% of total" Icon={FileText}/><Stat label="Shared Reports" value="21" note="50% of total" Icon={Users}/><Stat label="Scheduled Reports" value="06" note="14% of total" Icon={ClipboardCheck}/></div><div className="split" style={{ marginTop: 18 }}><div className="card table-card"><div className="table-toolbar"><input className="searchbox" placeholder="Search reports by name or product..." data-testid="input-reports-search"/><select className="selectbox" value={filter} onChange={e => setFilter(e.target.value)} data-testid="select-reports-status"><option>All</option><option>Completed</option><option>Shared</option><option>Draft</option></select><button className="btn btn-quiet" onClick={() => onToast('Filters cleared')} data-testid="button-reports-clear">Clear</button></div><div className="table-wrap"><table><thead><tr><th>Report Name</th><th>Report Type</th><th>Generated On</th><th>Status</th><th>Confidence</th><th>Actions</th></tr></thead><tbody>{shown.map((r, i) => <tr key={r[0]} data-testid={`row-report-${i}`}><td><strong>{r[0]}</strong></td><td><span className="pill gray">{r[1]}</span></td><td>{r[2]}</td><td><span className={showClass(r[3])}>{r[3]}</span></td><td><b>{r[4]}</b><div className="progress-line" style={{ width: 58, marginTop: 5 }}><i style={{ width: r[4] }}/></div></td><td><button className="btn btn-quiet" onClick={() => onToast('Report downloaded')} data-testid={`button-download-report-${i}`}><Download size={14}/></button><button className="btn btn-quiet" onClick={() => onToast('Report options opened')} data-testid={`button-report-more-${i}`}><MoreHorizontal size={14}/></button></td></tr>)}</tbody></table></div></div><div className="side-stack"><div className="card card-pad"><h2 className="section-title">Report Templates <span>View all</span></h2>{['IP Readiness Report', 'Regulatory Checklist Summary', 'TK / ABS Compliance Report', 'Global Market Readiness Report', 'Full Product Analysis Report'].map((x, i) => <div className="list-row" key={x}><span className="dot-icon"><FileText size={13}/></span><div className="row-main"><b>{x}</b><small>{['Comprehensive IP landscape & readiness', 'Compliance status across markets', 'Traditional knowledge & ABS compliance', 'Market entry readiness by region', '360° product intelligence report'][i]}</small></div></div>)}</div><div className="card card-pad"><h2 className="section-title">Scheduled Deliveries</h2>{['IP Readiness Report', 'Global Market Readiness Report', 'Regulatory Checklist Summary'].map(x => <div className="list-row" key={x}><div className="row-main"><b>{x}</b><small>May {15 + Math.random() * 8 | 0}, 2024 · 09:00 AM</small></div><span className="pill amber">Scheduled</span></div>)}</div><div className="card card-pad report-insights"><h2 className="section-title"><PieChart size={15}/> Insights Snapshot</h2><ReportStatusDonut /></div></div></div></Page>;
+  const [filter, setFilter] = useState("All");
+  const shown = reports.filter((r) => filter === "All" || r[3] === filter);
+  return (
+    <Page
+      title="Reports & Exports"
+      subtitle="Generate, manage and export insights from your product intelligence."
+      action={
+        <button
+          className="btn btn-primary"
+          onClick={() => onToast("New report draft created")}
+          data-testid="button-new-report"
+        >
+          <FileText size={14} /> New Report <ChevronDown size={13} />
+        </button>
+      }
+    >
+      <div className="metric-grid">
+        <Stat
+          label="Total Reports"
+          value="42"
+          note="↗ 18% vs last month"
+          Icon={FileText}
+        />
+        <Stat
+          label="Draft Reports"
+          value="07"
+          note="17% of total"
+          Icon={FileText}
+        />
+        <Stat
+          label="Shared Reports"
+          value="21"
+          note="50% of total"
+          Icon={Users}
+        />
+        <Stat
+          label="Scheduled Reports"
+          value="06"
+          note="14% of total"
+          Icon={ClipboardCheck}
+        />
+      </div>
+      <div className="split" style={{ marginTop: 18 }}>
+        <div className="card table-card">
+          <div className="table-toolbar">
+            <input
+              className="searchbox"
+              placeholder="Search reports by name or product..."
+              data-testid="input-reports-search"
+            />
+            <select
+              className="selectbox"
+              value={filter}
+              onChange={(e) => setFilter(e.target.value)}
+              data-testid="select-reports-status"
+            >
+              <option>All</option>
+              <option>Completed</option>
+              <option>Shared</option>
+              <option>Draft</option>
+            </select>
+            <button
+              className="btn btn-quiet"
+              onClick={() => onToast("Filters cleared")}
+              data-testid="button-reports-clear"
+            >
+              Clear
+            </button>
+          </div>
+          <div className="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Report Name</th>
+                  <th>Report Type</th>
+                  <th>Generated On</th>
+                  <th>Status</th>
+                  <th>Confidence</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {shown.map((r, i) => (
+                  <tr key={r[0]} data-testid={`row-report-${i}`}>
+                    <td>
+                      <strong>{r[0]}</strong>
+                    </td>
+                    <td>
+                      <span className="pill gray">{r[1]}</span>
+                    </td>
+                    <td>{r[2]}</td>
+                    <td>
+                      <span className={showClass(r[3])}>{r[3]}</span>
+                    </td>
+                    <td>
+                      <b>{r[4]}</b>
+                      <div
+                        className="progress-line"
+                        style={{ width: 58, marginTop: 5 }}
+                      >
+                        <i style={{ width: r[4] }} />
+                      </div>
+                    </td>
+                    <td>
+                      <button
+                        className="btn btn-quiet"
+                        onClick={() => onToast("Report downloaded")}
+                        data-testid={`button-download-report-${i}`}
+                      >
+                        <Download size={14} />
+                      </button>
+                      <button
+                        className="btn btn-quiet"
+                        onClick={() => onToast("Report options opened")}
+                        data-testid={`button-report-more-${i}`}
+                      >
+                        <MoreHorizontal size={14} />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div className="side-stack">
+          <div className="card card-pad">
+            <h2 className="section-title">
+              Report Templates <span>View all</span>
+            </h2>
+            {[
+              "IP Readiness Report",
+              "Regulatory Checklist Summary",
+              "TK / ABS Compliance Report",
+              "Global Market Readiness Report",
+              "Full Product Analysis Report",
+            ].map((x, i) => (
+              <div className="list-row" key={x}>
+                <span className="dot-icon">
+                  <FileText size={13} />
+                </span>
+                <div className="row-main">
+                  <b>{x}</b>
+                  <small>
+                    {
+                      [
+                        "Comprehensive IP landscape & readiness",
+                        "Compliance status across markets",
+                        "Traditional knowledge & ABS compliance",
+                        "Market entry readiness by region",
+                        "360° product intelligence report",
+                      ][i]
+                    }
+                  </small>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="card card-pad">
+            <h2 className="section-title">Scheduled Deliveries</h2>
+            {[
+              "IP Readiness Report",
+              "Global Market Readiness Report",
+              "Regulatory Checklist Summary",
+            ].map((x) => (
+              <div className="list-row" key={x}>
+                <div className="row-main">
+                  <b>{x}</b>
+                  <small>
+                    May {(15 + Math.random() * 8) | 0}, 2024 · 09:00 AM
+                  </small>
+                </div>
+                <span className="pill amber">Scheduled</span>
+              </div>
+            ))}
+          </div>
+          <div className="card card-pad report-insights">
+            <h2 className="section-title">
+              <PieChart size={15} /> Insights Snapshot
+            </h2>
+            <ReportStatusDonut />
+          </div>
+        </div>
+      </div>
+    </Page>
+  );
 }
 function AppRoutes() {
-    const [toast, setToast] = useState('');
-    const notify = (m) => { setToast(m); window.setTimeout(() => setToast(''), 2600); };
-    return <ToastContext.Provider value={notify}><Switch><Route path="/" component={Home}/><Route path="/dashboard"><Shell><Dashboard onToast={notify}/></Shell></Route><Route path="/analyze"><Shell><Wizard onToast={notify}/></Shell></Route><Route path="/products"><Shell><Products onToast={notify}/></Shell></Route><Route path="/navigator"><Shell><Navigator onToast={notify}/></Shell></Route><Route path="/regulatory"><Shell><Regulatory onToast={notify}/></Shell></Route><Route path="/tk-abs"><Shell><TKAbs /></Shell></Route><Route path="/markets"><Shell><Markets onToast={notify}/></Shell></Route><Route path="/assistant"><Shell><Assistant onToast={notify}/></Shell></Route><Route path="/evidence"><Shell><Evidence onToast={notify}/></Shell></Route><Route path="/reports"><Shell><Reports onToast={notify}/></Shell></Route><Route><Shell><Page title="Page not found" subtitle="The requested workspace could not be found."><Link href="/dashboard" className="btn btn-primary" data-testid="link-not-found-dashboard">Return to Dashboard</Link></Page></Shell></Route></Switch>{toast && <div className="toast" role="status" data-testid="status-toast">{toast}<button onClick={() => setToast('')} aria-label="Close notification" data-testid="button-close-toast"><X size={13}/></button></div>}</ToastContext.Provider>;
+  const [toast, setToast] = useState("");
+  const notify = (m) => {
+    setToast(m);
+    window.setTimeout(() => setToast(""), 2600);
+  };
+  return (
+    <ToastContext.Provider value={notify}>
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route path="/dashboard">
+          <Shell>
+            <Dashboard onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/analyze">
+          <Shell>
+            <Wizard onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/products">
+          <Shell>
+            <Products onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/navigator">
+          <Shell>
+            <Navigator onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/regulatory">
+          <Shell>
+            <Regulatory onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/tk-abs">
+          <Shell>
+            <TKAbs />
+          </Shell>
+        </Route>
+        <Route path="/markets">
+          <Shell>
+            <Markets onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/assistant">
+          <Shell>
+            <Assistant onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/evidence">
+          <Shell>
+            <Evidence onToast={notify} />
+          </Shell>
+        </Route>
+        <Route path="/reports">
+          <Shell>
+            <Reports onToast={notify} />
+          </Shell>
+        </Route>
+        <Route>
+          <Shell>
+            <Page
+              title="Page not found"
+              subtitle="The requested workspace could not be found."
+            >
+              <Link
+                href="/dashboard"
+                className="btn btn-primary"
+                data-testid="link-not-found-dashboard"
+              >
+                Return to Dashboard
+              </Link>
+            </Page>
+          </Shell>
+        </Route>
+      </Switch>
+      {toast && (
+        <div className="toast" role="status" data-testid="status-toast">
+          {toast}
+          <button
+            onClick={() => setToast("")}
+            aria-label="Close notification"
+            data-testid="button-close-toast"
+          >
+            <X size={13} />
+          </button>
+        </div>
+      )}
+    </ToastContext.Provider>
+  );
 }
-export default function App() { useEffect(() => { if (!localStorage.getItem('ip_sakti_token')) apiLogin('demo@ipsakti.local','Demo@123').then(x => { const d=x.data || x; if (d.token) localStorage.setItem('ip_sakti_token',d.token); }).catch(() => {}); }, []); return <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, '')}><AppRoutes /></WouterRouter>; }
+export default function App() {
+  useEffect(() => {
+    if (!localStorage.getItem("ip_sakti_token"))
+      apiLogin("demo@ipsakti.local", "Demo@123")
+        .then((x) => {
+          const d = x.data || x;
+          if (d.token) localStorage.setItem("ip_sakti_token", d.token);
+        })
+        .catch(() => {});
+  }, []);
+  return (
+    <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+      <AppRoutes />
+    </WouterRouter>
+  );
+}
