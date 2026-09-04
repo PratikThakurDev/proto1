@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "IP-SAKTI Sahayak"
+description = "A responsive React frontend recreating the IP-SAKTI Sahayak Ayurvedic intellectual property and regulatory intelligence workspace from the supplied design references, with interactive navigation, analysis workflow, dashboards, evidence, markets, reports, and assistant views."
+version = "1.0.0"
+id = "artifacts/ip-sakti-sahayak"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21179
+
+[services.development]
+run = "pnpm --filter @workspace/ip-sakti-sahayak run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ip-sakti-sahayak", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ip-sakti-sahayak/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21179"
+BASE_PATH = "/"

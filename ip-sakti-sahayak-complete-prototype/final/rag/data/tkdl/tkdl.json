@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "TKDL-0001",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Brahmi and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Brahmi; intended context: digestive wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "digestive wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0002",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: joint comfort; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "joint comfort",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0003",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: stress support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "stress support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0004",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: stress support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "stress support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0005",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Licorice and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Licorice; intended context: digestive wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "digestive wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0006",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Neem and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Neem; intended context: joint comfort; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "joint comfort",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0007",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Bacopa and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Bacopa; intended context: women’s wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bacopa",
+      "women’s wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0008",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0009",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: sleep support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "sleep support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0010",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fenugreek and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fenugreek; intended context: women’s wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "women’s wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0011",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ashwagandha and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ashwagandha; intended context: skin care; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "skin care",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0012",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Licorice and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Licorice; intended context: immunity support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "immunity support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0013",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: joint comfort; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "joint comfort",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0014",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Guduchi and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Guduchi; intended context: stress support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "stress support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0015",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Moringa and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Moringa; intended context: stress support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "stress support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0016",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Shatavari and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Shatavari; intended context: women’s wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "shatavari",
+      "women’s wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0017",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Turmeric and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Turmeric; intended context: respiratory wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "respiratory wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0018",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Brahmi and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Brahmi; intended context: sleep support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "sleep support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0019",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and general wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: general wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "general wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0020",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Bibhitaki and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Bibhitaki; intended context: immunity support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "immunity support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0021",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Cumin and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Cumin; intended context: stress support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "stress support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0022",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and general wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: general wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "general wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0023",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: stress support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "stress support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0024",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: respiratory wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "respiratory wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0025",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Shatavari and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Shatavari; intended context: skin care; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "shatavari",
+      "skin care",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0026",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Shatavari and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Shatavari; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "shatavari",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0027",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: stress support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "stress support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0028",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ginger and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ginger; intended context: metabolic wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ginger",
+      "metabolic wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0029",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: skin care; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "skin care",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0030",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Moringa and general wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Moringa; intended context: general wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "general wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0031",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0032",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Guduchi and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Guduchi; intended context: digestive wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "digestive wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0033",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Turmeric and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Turmeric; intended context: immunity support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "immunity support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0034",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: stress support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "stress support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0035",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Haritaki and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Haritaki; intended context: immunity support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "immunity support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0036",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Arjuna and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Arjuna; intended context: sleep support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "sleep support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0037",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fenugreek and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fenugreek; intended context: skin care; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "skin care",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0038",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0039",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: metabolic wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "metabolic wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0040",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Haritaki and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Haritaki; intended context: sleep support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "sleep support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0041",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Moringa and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Moringa; intended context: immunity support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "immunity support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0042",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: metabolic wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "metabolic wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0043",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Neem and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Neem; intended context: digestive wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "digestive wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0044",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Brahmi and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Brahmi; intended context: skin care; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "skin care",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0045",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ginger and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ginger; intended context: sleep support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ginger",
+      "sleep support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0046",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Neem and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Neem; intended context: sleep support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "sleep support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0047",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Bibhitaki and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Bibhitaki; intended context: respiratory wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "respiratory wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0048",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: metabolic wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "metabolic wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0049",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ashwagandha and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ashwagandha; intended context: stress support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "stress support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0050",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and general wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: general wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "general wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0051",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Guduchi and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Guduchi; intended context: stress support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "stress support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0052",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Licorice and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Licorice; intended context: skin care; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "skin care",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0053",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ashwagandha and general wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ashwagandha; intended context: general wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "general wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0054",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ginger and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ginger; intended context: metabolic wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ginger",
+      "metabolic wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0055",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Amla and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Amla; intended context: metabolic wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "metabolic wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0056",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Cumin and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Cumin; intended context: skin care; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "skin care",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0057",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ginger and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ginger; intended context: metabolic wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ginger",
+      "metabolic wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0058",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Bacopa and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Bacopa; intended context: digestive wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bacopa",
+      "digestive wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0059",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Guduchi and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Guduchi; intended context: respiratory wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "respiratory wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0060",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Brahmi and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Brahmi; intended context: immunity support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "immunity support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0061",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Amla and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Amla; intended context: joint comfort; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "joint comfort",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0062",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: women’s wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "women’s wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0063",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Neem and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Neem; intended context: respiratory wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "respiratory wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0064",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Neem and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Neem; intended context: metabolic wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "metabolic wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0065",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: skin care; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "skin care",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0066",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Arjuna and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Arjuna; intended context: metabolic wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "metabolic wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0067",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: metabolic wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "metabolic wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0068",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Bibhitaki and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Bibhitaki; intended context: sleep support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "sleep support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0069",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0070",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Amla and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Amla; intended context: sleep support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "sleep support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0071",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Shatavari and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Shatavari; intended context: respiratory wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "shatavari",
+      "respiratory wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0072",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fenugreek and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fenugreek; intended context: stress support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "stress support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0073",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: stress support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "stress support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0074",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ashwagandha and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ashwagandha; intended context: women’s wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "women’s wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0075",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: women’s wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "women’s wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0076",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Ashwagandha and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Ashwagandha; intended context: stress support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "stress support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0077",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Turmeric and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Turmeric; intended context: joint comfort; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "joint comfort",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0078",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Turmeric and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Turmeric; intended context: immunity support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "immunity support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0079",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Bacopa and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Bacopa; intended context: joint comfort; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bacopa",
+      "joint comfort",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0080",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Arjuna and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Arjuna; intended context: joint comfort; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "joint comfort",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0081",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and women’s wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: women’s wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "women’s wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0082",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Arjuna and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Arjuna; intended context: joint comfort; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "joint comfort",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0083",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Arjuna and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Arjuna; intended context: sleep support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "sleep support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0084",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Brahmi and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Brahmi; intended context: stress support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "stress support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0085",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Licorice and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Licorice; intended context: immunity support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "immunity support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0086",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Licorice and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Licorice; intended context: respiratory wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "respiratory wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0087",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Turmeric and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Turmeric; intended context: stress support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "stress support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0088",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Moringa and immunity support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Moringa; intended context: immunity support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "immunity support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0089",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Brahmi and joint comfort",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Brahmi; intended context: joint comfort; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "joint comfort",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0090",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Cumin and metabolic wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Cumin; intended context: metabolic wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "metabolic wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0091",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Triphala and sleep support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Triphala; intended context: sleep support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "sleep support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0092",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: respiratory wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "respiratory wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0093",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Neem and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Neem; intended context: respiratory wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "respiratory wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0094",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and stress support",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: stress support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "stress support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0095",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Giloy and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Giloy; intended context: digestive wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "digestive wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0096",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Fennel and skin care",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Fennel; intended context: skin care; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "skin care",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0097",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Arjuna and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Arjuna; intended context: respiratory wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "respiratory wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0098",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Moringa and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Moringa; intended context: digestive wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "digestive wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0099",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Moringa and digestive wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Moringa; intended context: digestive wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "digestive wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  },
+  {
+    "id": "TKDL-0100",
+    "source": "TKDL",
+    "sourceType": "traditional_knowledge",
+    "title": "Sample traditional-knowledge record: Tulsi and respiratory wellness",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: TKDL. Topic: Tulsi; intended context: respiratory wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "respiratory wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "traditional_knowledge",
+    "sample": true
+  }
+]

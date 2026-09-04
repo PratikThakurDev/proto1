@@ -1,0 +1,1 @@
+export const validateTranslation = (body) => { const errors = []; if (!body.text) errors.push('text is required'); if (!body.sourceLanguage) errors.push('sourceLanguage is required'); if (!body.targetLanguage) errors.push('targetLanguage is required'); return errors; };

@@ -1,0 +1,1 @@
+import { Router } from 'express'; import * as c from '../controllers/report.controller.js'; const r=Router(); r.get('/',c.list); r.post('/',c.create); r.get('/templates',c.templates); r.get('/:id',c.get); export default r;

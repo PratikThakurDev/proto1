@@ -1,0 +1,1 @@
+import { Router } from 'express'; import * as c from '../controllers/language.controller.js'; const r=Router(); r.get('/languages',c.getLanguages); r.post('/translate',c.translate); r.post('/detect',c.detect); export default r;

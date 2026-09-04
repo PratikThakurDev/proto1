@@ -1,0 +1,1702 @@
+[
+  {
+    "id": "PATENT-0001",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bibhitaki tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bibhitaki; intended context: immunity support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "immunity support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0002",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fenugreek tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fenugreek; intended context: women’s wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "women’s wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0003",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bacopa tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bacopa; intended context: sleep support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bacopa",
+      "sleep support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0004",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: respiratory wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "respiratory wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0005",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Arjuna powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Arjuna; intended context: respiratory wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "respiratory wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0006",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: general wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "general wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0007",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bacopa topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bacopa; intended context: respiratory wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bacopa",
+      "respiratory wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0008",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: general wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "general wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0009",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Neem tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Neem; intended context: general wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "general wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0010",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Tulsi powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Tulsi; intended context: immunity support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "immunity support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0011",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: stress support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "stress support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0012",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Triphala oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Triphala; intended context: joint comfort; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "joint comfort",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0013",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Triphala capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Triphala; intended context: joint comfort; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "joint comfort",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0014",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: sleep support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "sleep support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0015",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: respiratory wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "respiratory wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0016",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Turmeric tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Turmeric; intended context: joint comfort; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "joint comfort",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0017",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: sleep support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "sleep support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0018",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Haritaki tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Haritaki; intended context: digestive wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "digestive wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0019",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Haritaki oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Haritaki; intended context: sleep support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "sleep support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0020",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: immunity support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "immunity support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0021",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Moringa syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Moringa; intended context: sleep support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "sleep support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0022",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: women’s wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "women’s wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0023",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Arjuna powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Arjuna; intended context: joint comfort; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "joint comfort",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0024",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: respiratory wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "respiratory wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0025",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Moringa topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Moringa; intended context: immunity support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "immunity support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0026",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Moringa tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Moringa; intended context: skin care; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "skin care",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0027",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fenugreek syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fenugreek; intended context: skin care; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "skin care",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0028",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: digestive wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "digestive wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0029",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Haritaki topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Haritaki; intended context: women’s wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "women’s wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0030",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: stress support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "stress support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0031",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: skin care; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "skin care",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0032",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fenugreek capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fenugreek; intended context: skin care; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "skin care",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0033",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Tulsi powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Tulsi; intended context: sleep support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "sleep support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0034",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Cumin powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Cumin; intended context: respiratory wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "respiratory wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0035",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Guduchi powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Guduchi; intended context: sleep support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "sleep support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0036",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: general wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "general wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0037",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Neem capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Neem; intended context: respiratory wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "respiratory wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0038",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: digestive wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "digestive wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0039",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: stress support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "stress support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0040",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Turmeric tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Turmeric; intended context: digestive wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "digestive wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0041",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Cumin syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Cumin; intended context: digestive wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "digestive wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0042",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Triphala tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Triphala; intended context: joint comfort; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "joint comfort",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0043",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Arjuna syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Arjuna; intended context: stress support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "stress support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0044",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Cumin topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Cumin; intended context: respiratory wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "respiratory wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0045",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Tulsi tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Tulsi; intended context: immunity support; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "immunity support",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0046",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bibhitaki topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bibhitaki; intended context: women’s wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "women’s wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0047",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Brahmi powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Brahmi; intended context: skin care; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "skin care",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0048",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Brahmi capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Brahmi; intended context: women’s wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "women’s wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0049",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Amla topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Amla; intended context: women’s wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "women’s wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0050",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Moringa topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Moringa; intended context: sleep support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "sleep support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0051",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Cumin syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Cumin; intended context: stress support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "stress support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0052",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: stress support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "stress support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0053",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Amla tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Amla; intended context: women’s wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "women’s wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0054",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Brahmi tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Brahmi; intended context: women’s wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "women’s wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0055",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Turmeric syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Turmeric; intended context: immunity support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "turmeric",
+      "immunity support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0056",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: immunity support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "immunity support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0057",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bacopa capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bacopa; intended context: immunity support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bacopa",
+      "immunity support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0058",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: respiratory wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "respiratory wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0059",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: immunity support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "immunity support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0060",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fenugreek oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fenugreek; intended context: skin care; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "skin care",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0061",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ginger topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ginger; intended context: metabolic wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ginger",
+      "metabolic wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0062",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Tulsi tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Tulsi; intended context: women’s wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "women’s wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0063",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: respiratory wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "respiratory wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0064",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: women’s wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "women’s wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0065",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Guduchi tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Guduchi; intended context: joint comfort; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "joint comfort",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0066",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Neem oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Neem; intended context: general wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "general wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0067",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: respiratory wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "respiratory wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0068",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bibhitaki powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bibhitaki; intended context: sleep support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "sleep support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0069",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: respiratory wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "respiratory wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0070",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Guduchi oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Guduchi; intended context: skin care; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "skin care",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0071",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Cumin tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Cumin; intended context: immunity support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "immunity support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0072",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Tulsi powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Tulsi; intended context: immunity support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "immunity support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0073",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Bibhitaki syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Bibhitaki; intended context: general wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "bibhitaki",
+      "general wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0074",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: metabolic wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "metabolic wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0075",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Neem topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Neem; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0076",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: respiratory wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "respiratory wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0077",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: respiratory wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "respiratory wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0078",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Arjuna tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Arjuna; intended context: respiratory wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "respiratory wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0079",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: stress support; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "stress support",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0080",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: sleep support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "sleep support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0081",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Fennel topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Fennel; intended context: general wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "general wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0082",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Haritaki oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Haritaki; intended context: immunity support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "immunity support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0083",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: metabolic wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "metabolic wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0084",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Licorice powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Licorice; intended context: metabolic wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "licorice",
+      "metabolic wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0085",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Shatavari powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Shatavari; intended context: respiratory wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "shatavari",
+      "respiratory wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0086",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Amla tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Amla; intended context: general wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "general wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0087",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Brahmi powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Brahmi; intended context: joint comfort; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "joint comfort",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0088",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Brahmi tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Brahmi; intended context: metabolic wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "metabolic wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0089",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ginger tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ginger; intended context: joint comfort; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ginger",
+      "joint comfort",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0090",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Arjuna topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Arjuna; intended context: general wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "general wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0091",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Haritaki syrup formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Haritaki; intended context: metabolic wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "haritaki",
+      "metabolic wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0092",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Amla tea blend formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Amla; intended context: stress support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "stress support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0093",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Cumin tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Cumin; intended context: general wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "cumin",
+      "general wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0094",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Shatavari powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Shatavari; intended context: skin care; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "shatavari",
+      "skin care",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0095",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha tablet formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: metabolic wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "metabolic wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0096",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Tulsi capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Tulsi; intended context: digestive wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "digestive wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0097",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Giloy topical gel formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Giloy; intended context: general wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "general wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0098",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Triphala capsule formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Triphala; intended context: respiratory wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "respiratory wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0099",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Ashwagandha powder formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Ashwagandha; intended context: women’s wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "ashwagandha",
+      "women’s wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "PATENT-0100",
+    "source": "PATENT",
+    "sourceType": "patent",
+    "title": "Sample patent record: Arjuna oil formulation",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: PATENT. Topic: Arjuna; intended context: respiratory wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "arjuna",
+      "respiratory wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  }
+]

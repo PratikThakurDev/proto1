@@ -1,0 +1,1 @@
+export function requireFields(fields) { return (req, res, next) => { const missing = fields.filter((f) => req.body?.[f] === undefined || req.body?.[f] === ''); if (missing.length) return res.status(422).json({ success: false, message: 'Validation failed', missing }); next(); }; }

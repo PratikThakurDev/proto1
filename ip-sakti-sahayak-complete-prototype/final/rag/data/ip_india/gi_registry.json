@@ -1,0 +1,427 @@
+[
+  {
+    "id": "GI-0001",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Giloy; intended context: respiratory wellness; formulation: powder. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "respiratory wellness",
+      "powder",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0002",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Guduchi; intended context: metabolic wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "metabolic wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0003",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Giloy; intended context: sleep support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "sleep support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0004",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Guduchi; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0005",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Fennel; intended context: women’s wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "women’s wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0006",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Fennel; intended context: sleep support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fennel",
+      "sleep support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0007",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Guduchi; intended context: respiratory wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "respiratory wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0008",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Moringa; intended context: sleep support; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "sleep support",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0009",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Triphala; intended context: respiratory wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "respiratory wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0010",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Triphala; intended context: metabolic wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "metabolic wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0011",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Guduchi; intended context: stress support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "stress support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0012",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Fenugreek; intended context: stress support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "stress support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0013",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Fenugreek; intended context: digestive wellness; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "fenugreek",
+      "digestive wellness",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0014",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Triphala; intended context: sleep support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "sleep support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0015",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Triphala; intended context: stress support; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "triphala",
+      "stress support",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0016",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Tulsi; intended context: immunity support; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "tulsi",
+      "immunity support",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0017",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Moringa; intended context: stress support; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "moringa",
+      "stress support",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0018",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Guduchi; intended context: metabolic wellness; formulation: oil. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "metabolic wellness",
+      "oil",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0019",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Guduchi; intended context: respiratory wellness; formulation: tea blend. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "guduchi",
+      "respiratory wellness",
+      "tea blend",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0020",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Giloy; intended context: digestive wellness; formulation: syrup. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "giloy",
+      "digestive wellness",
+      "syrup",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0021",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Neem; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0022",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Amla; intended context: joint comfort; formulation: topical gel. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "joint comfort",
+      "topical gel",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0023",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Neem; intended context: sleep support; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "neem",
+      "sleep support",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0024",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Brahmi; intended context: respiratory wellness; formulation: tablet. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "brahmi",
+      "respiratory wellness",
+      "tablet",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  },
+  {
+    "id": "GI-0025",
+    "source": "GI",
+    "sourceType": "geographical_indication",
+    "title": "Sample GI record: geographical association and herbal product",
+    "text": "This is a synthetic prototype record for testing IP-SAKTI Sahayak retrieval. Source family: GI. Topic: Amla; intended context: digestive wellness; formulation: capsule. It is designed to resemble the metadata and evidence style of a curated authoritative record, but it is not an official quotation or legal determination.",
+    "keywords": [
+      "amla",
+      "digestive wellness",
+      "capsule",
+      "ayurveda",
+      "herbal",
+      "ip sakti"
+    ],
+    "category": "ip",
+    "sample": true
+  }
+]

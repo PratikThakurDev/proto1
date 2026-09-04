@@ -1,0 +1,47 @@
+import express from 'express';
+import cors from 'cors';
+import path from 'node:path';
+import authRoutes from './routes/auth.routes.js';
+import userRoutes from './routes/user.routes.js';
+import productRoutes from './routes/product.routes.js';
+import analysisRoutes from './routes/analysis.routes.js';
+import navigatorRoutes from './routes/navigator.routes.js';
+import regulatoryRoutes from './routes/regulatory.routes.js';
+import tkabsRoutes from './routes/tkabs.routes.js';
+import marketRoutes from './routes/market.routes.js';
+import assistantRoutes from './routes/assistant.routes.js';
+import evidenceRoutes from './routes/evidence.routes.js';
+import reportRoutes from './routes/report.routes.js';
+import dashboardRoutes from './routes/dashboard.routes.js';
+import languageRoutes from './routes/language.routes.js';
+import { requireAuth } from './middleware/auth.middleware.js';
+import { apiLimiter, languageLimiter } from './middleware/rateLimit.middleware.js';
+import { notFound, errorHandler } from './middleware/error.middleware.js';
+import { env } from './config/env.js';
+import { ragHealth } from './rag-client/rag.client.js';
+
+const app = express();
+app.use(cors({ origin: env.clientUrl.split(',').map((x) => x.trim()), credentials: true }));
+app.use(express.json({ limit: '2mb' }));
+app.use(express.urlencoded({ extended: true }));
+app.use(apiLimiter);
+app.use('/uploads', express.static(path.resolve('uploads')));
+
+app.get('/api/health', async (req,res) => { let rag={ok:false}; try { rag=await ragHealth(); } catch {} res.json({ success:true, message:'IP-SAKTI backend is running', rag, timestamp:new Date().toISOString() }); });
+app.use('/api/auth', authRoutes);
+app.use('/api/users', requireAuth, userRoutes);
+app.use('/api/products', requireAuth, productRoutes);
+app.use('/api/analysis', requireAuth, analysisRoutes);
+app.use('/api/navigator', requireAuth, navigatorRoutes);
+app.use('/api/regulatory', requireAuth, regulatoryRoutes);
+app.use('/api/tkabs', requireAuth, tkabsRoutes);
+app.use('/api/markets', requireAuth, marketRoutes);
+app.use('/api/assistant', requireAuth, assistantRoutes);
+app.use('/api/evidence', requireAuth, evidenceRoutes);
+app.use('/api/reports', requireAuth, reportRoutes);
+app.use('/api/dashboard', requireAuth, dashboardRoutes);
+app.use('/api/language', requireAuth, languageLimiter, languageRoutes);
+
+app.use(notFound);
+app.use(errorHandler);
+export default app;

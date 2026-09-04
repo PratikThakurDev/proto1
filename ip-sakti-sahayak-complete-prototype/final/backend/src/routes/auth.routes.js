@@ -1,0 +1,1 @@
+import { Router } from 'express'; import * as c from '../controllers/auth.controller.js'; const r=Router(); r.post('/register',c.registerController); r.post('/login',c.loginController); r.post('/logout',c.logoutController); export default r;

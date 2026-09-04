@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fff"/>
+  <rect width="1200" height="266.67" fill="#ff9933"/>
+  <rect y="533.33" width="1200" height="266.67" fill="#138808"/>
+  <circle cx="600" cy="400" r="92" fill="none" stroke="#000080" stroke-width="12"/>
+  <circle cx="600" cy="400" r="18" fill="#000080"/>
+  <g stroke="#000080" stroke-width="5" transform="translate(600 400)">
+    <path id="spoke" d="M0-88V88M-88 0H88M-62-62L62 62M62-62L-62 62"/>
+  </g>
+</svg>
